@@ -8,7 +8,7 @@ on:
   # merge_group:
   workflow_dispatch:
   pull_request:
-    branches: [master]
+    branches: [main]
     types: [auto_merge_enabled, ready_for_review]
 
 jobs:

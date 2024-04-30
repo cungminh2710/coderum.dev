@@ -1,0 +1,52 @@
+name: Code Format
+
+on:
+  push:
+    branches:
+      - 'main'
+  workflow_dispatch:
+
+jobs:
+  prettier:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [20.x]
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: pnpm install
+        uses: './.github/actions/install_deps'
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Restore prettier cache
+        uses: actions/cache/restore@v4
+        with:
+          path: .cache/prettier
+          key: prettier-main-cache
+
+      - name: Format
+        run: pnpm format
+        continue-on-error: true
+
+      - name: Remove cache
+        if: github.event_name == 'push'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.event.repository.full_name }}
+        run: |
+          gh api --method DELETE /repos/{owner}/{repo}/actions/caches?key=prettier-main-cache ||
+            echo "Cache not found"
+
+      - name: Save Cache
+        if: github.event_name == 'push'
+        uses: actions/cache/save@v4
+        with:
+          path: .cache/prettier
+          key: prettier-main-cache
+
+      - name: Commit and Push
+        if: github.event_name != 'push'
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: Apply Prettier
