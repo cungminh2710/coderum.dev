@@ -5,9 +5,7 @@ const config = {
 		project: true,
 	},
 	plugins: ['@typescript-eslint', 'drizzle'],
-	extends: [
-		'@repo/eslint-config/next.js',
-	],
+	extends: ['@repo/eslint-config/next.js'],
 };
 
 module.exports = config;
