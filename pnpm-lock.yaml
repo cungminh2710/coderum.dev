@@ -44,6 +44,9 @@ importers:
       '@lucia-auth/adapter-drizzle':
         specifier: 1.0.7
         version: 1.0.7(lucia@3.2.0)
+      '@repo/ui':
+        specifier: workspace:*
+        version: link:../../packages/ui
       '@t3-oss/env-nextjs':
         specifier: 0.10.1
         version: 0.10.1(typescript@5.4.2)(zod@3.23.3)
@@ -283,6 +286,9 @@ importers:
       '@storybook/addon-onboarding':
         specifier: 8.0.9
         version: 8.0.9
+      '@storybook/addon-themes':
+        specifier: ^8.0.9
+        version: 8.0.9
       '@storybook/blocks':
         specifier: 8.0.9
         version: 8.0.9(@types/react@18.2.61)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -322,6 +328,12 @@ importers:
       storybook:
         specifier: 8.0.9
         version: 8.0.9(@babel/preset-env@7.24.5(@babel/core@7.24.5))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      tailwindcss:
+        specifier: 3.4.1
+        version: 3.4.1(ts-node@10.9.2(@types/node@20.11.24)(typescript@5.3.3))
+      tailwindcss-animate:
+        specifier: ^1.0.7
+        version: 1.0.7(tailwindcss@3.4.1(ts-node@10.9.2(@types/node@20.11.24)(typescript@5.3.3)))
       typescript:
         specifier: 5.3.3
         version: 5.3.3
@@ -2434,6 +2446,9 @@ packages:
 
   '@storybook/addon-outline@8.0.9':
     resolution: {integrity: sha512-fQ+jm356TgUnz81IxsC99/aOesbLw3N5OQRJpo/A6kqbLMzlq3ybVzuXYCKC3f0ArgQRNh4NoMeJBMRFMtaWRw==}
+
+  '@storybook/addon-themes@8.0.9':
+    resolution: {integrity: sha512-aAbKIT//bqKbMeRLKtVStwndi+XrYxeg94tDKTFrIv2W1It6QJlO/5FMjI+cgtHHBi6w/4ThKDYwjupasaBdlg==}
 
   '@storybook/addon-toolbars@8.0.9':
     resolution: {integrity: sha512-nNSBnnBOhQ+EJwkrIkK4ZBYPcozNmEH770CZ/6NK85SUJ6WEBZapE6ru33jIUokFGEvlOlNCeai0GUc++cQP8w==}
@@ -6349,6 +6364,11 @@ packages:
   tailwind-merge@2.3.0:
     resolution: {integrity: sha512-vkYrLpIP+lgR0tQCG6AP7zZXCTLc1Lnv/CCRT3BqJ9CZ3ui2++GPaGb1x/ILsINIMSYqqvrpqjUFsMNLlW99EA==}
 
+  tailwindcss-animate@1.0.7:
+    resolution: {integrity: sha512-bl6mpH3T7I3UFxuvDEXLxy/VuFxBk5bbzplh7tXI68mwMokNYd1t9qPBHlnyTwfa4JGC4zP516I1hYYtQ/vspA==}
+    peerDependencies:
+      tailwindcss: '>=3.0.0 || insiders'
+
   tailwindcss@3.4.1:
     resolution: {integrity: sha512-qAYmXRfk3ENzuPBakNK0SRrUDipP8NQnEY6772uDhflcQz5EhRdD7JNZxyrFHVQNCwULPBn6FNPp9brpO7ctcA==}
     engines: {node: '>=14.0.0'}
@@ -8861,6 +8881,10 @@ snapshots:
   '@storybook/addon-outline@8.0.9':
     dependencies:
       '@storybook/global': 5.0.0
+      ts-dedent: 2.2.0
+
+  '@storybook/addon-themes@8.0.9':
+    dependencies:
       ts-dedent: 2.2.0
 
   '@storybook/addon-toolbars@8.0.9': {}
@@ -12992,6 +13016,14 @@ snapshots:
       postcss: 8.4.34
       ts-node: 10.9.2(@types/node@20.11.20)(typescript@5.4.2)
 
+  postcss-load-config@4.0.2(postcss@8.4.34)(ts-node@10.9.2(@types/node@20.11.24)(typescript@5.3.3)):
+    dependencies:
+      lilconfig: 3.1.1
+      yaml: 2.4.2
+    optionalDependencies:
+      postcss: 8.4.34
+      ts-node: 10.9.2(@types/node@20.11.24)(typescript@5.3.3)
+
   postcss-nested@6.0.1(postcss@8.4.34):
     dependencies:
       postcss: 8.4.34
@@ -13746,6 +13778,10 @@ snapshots:
     dependencies:
       '@babel/runtime': 7.24.5
 
+  tailwindcss-animate@1.0.7(tailwindcss@3.4.1(ts-node@10.9.2(@types/node@20.11.24)(typescript@5.3.3))):
+    dependencies:
+      tailwindcss: 3.4.1(ts-node@10.9.2(@types/node@20.11.24)(typescript@5.3.3))
+
   tailwindcss@3.4.1(ts-node@10.9.2(@types/node@20.11.20)(typescript@5.4.2)):
     dependencies:
       '@alloc/quick-lru': 5.2.0
@@ -13766,6 +13802,33 @@ snapshots:
       postcss-import: 15.1.0(postcss@8.4.34)
       postcss-js: 4.0.1(postcss@8.4.34)
       postcss-load-config: 4.0.2(postcss@8.4.34)(ts-node@10.9.2(@types/node@20.11.20)(typescript@5.4.2))
+      postcss-nested: 6.0.1(postcss@8.4.34)
+      postcss-selector-parser: 6.0.16
+      resolve: 1.22.8
+      sucrase: 3.35.0
+    transitivePeerDependencies:
+      - ts-node
+
+  tailwindcss@3.4.1(ts-node@10.9.2(@types/node@20.11.24)(typescript@5.3.3)):
+    dependencies:
+      '@alloc/quick-lru': 5.2.0
+      arg: 5.0.2
+      chokidar: 3.6.0
+      didyoumean: 1.2.2
+      dlv: 1.1.3
+      fast-glob: 3.3.2
+      glob-parent: 6.0.2
+      is-glob: 4.0.3
+      jiti: 1.21.0
+      lilconfig: 2.1.0
+      micromatch: 4.0.5
+      normalize-path: 3.0.0
+      object-hash: 3.0.0
+      picocolors: 1.0.0
+      postcss: 8.4.34
+      postcss-import: 15.1.0(postcss@8.4.34)
+      postcss-js: 4.0.1(postcss@8.4.34)
+      postcss-load-config: 4.0.2(postcss@8.4.34)(ts-node@10.9.2(@types/node@20.11.24)(typescript@5.3.3))
       postcss-nested: 6.0.1(postcss@8.4.34)
       postcss-selector-parser: 6.0.16
       resolve: 1.22.8
