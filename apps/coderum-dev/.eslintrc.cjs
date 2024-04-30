@@ -7,57 +7,7 @@ const config = {
 	plugins: ['@typescript-eslint', 'drizzle'],
 	extends: [
 		'@repo/eslint-config/next.js',
-		'next/core-web-vitals',
-		'plugin:@typescript-eslint/recommended-type-checked',
-		'plugin:@typescript-eslint/stylistic-type-checked',
 	],
-	rules: {
-		'@typescript-eslint/array-type': 'off',
-		'@typescript-eslint/consistent-type-definitions': 'off',
-		'@typescript-eslint/consistent-type-imports': [
-			'warn',
-			{
-				prefer: 'type-imports',
-				fixStyle: 'inline-type-imports',
-			},
-		],
-		'@typescript-eslint/no-unused-vars': [
-			'warn',
-			{
-				argsIgnorePattern: '^_',
-			},
-		],
-		'@typescript-eslint/require-await': 'off',
-		'@typescript-eslint/no-misused-promises': [
-			'error',
-			{
-				checksVoidReturn: {
-					attributes: false,
-				},
-			},
-		],
-		'drizzle/enforce-delete-with-where': [
-			'error',
-			{
-				drizzleObjectName: ['db'],
-			},
-		],
-		'drizzle/enforce-update-with-where': [
-			'error',
-			{
-				drizzleObjectName: ['db'],
-			},
-		],
-	},
-};
-/** @type {import("eslint").Linter.Config} */
-module.exports = {
-	root: true,
-	extends: ['@repo/eslint-config/next.js'],
-	parser: '@typescript-eslint/parser',
-	parserOptions: {
-		project: true,
-	},
 };
 
 module.exports = config;
