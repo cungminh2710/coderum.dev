@@ -1,0 +1,9 @@
+{
+	"printWidth": 120,
+	"jsxSingleQuote": true,
+	"singleQuote": true,
+	"singleAttributePerLine": true,
+	"tabWidth": 2,
+	"useTabs": true,
+	"plugins": ["prettier-plugin-tailwindcss"]
+}
