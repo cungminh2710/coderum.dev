@@ -1,0 +1,27 @@
+{
+	"name": "coderum.dev",
+	"private": true,
+	"scripts": {
+		"build": "turbo build",
+		"dev": "turbo dev",
+		"lint": "turbo lint",
+		"format": "bun bin/format.ts write",
+		"format:ci": "bun bin/format.ts check"
+	},
+	"devDependencies": {
+		"@repo/eslint-config": "workspace:*",
+		"@repo/typescript-config": "workspace:*",
+		"@types/bun": "1.1.1",
+		"@types/yargs": "17.0.32",
+		"bun": "1.1.6",
+		"prettier": "3.2.5",
+		"prettier-plugin-tailwindcss": "0.5.14",
+		"turbo": "1.13.3",
+		"yargs": "17.7.2"
+	},
+	"packageManager": "pnpm@9.0.6",
+	"engines": {
+		"node": "20",
+		"pnpm": "9"
+	}
+}
