@@ -7,7 +7,7 @@ import { setupDevPlatform } from '@cloudflare/next-on-pages/next-dev';
 await import('./src/env.js');
 
 if (process.env.APP_ENV === 'development') {
-	console.log('Setting up dev platform for cloudflare')
+	console.log('Setting up dev platform for cloudflare');
 	await setupDevPlatform();
 }
 
