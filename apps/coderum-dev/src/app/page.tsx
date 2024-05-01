@@ -1,8 +1,9 @@
 import Link from 'next/link';
 
 import { api } from '@/trpc/server';
+import { env } from '@/env';
 
-export const runtime = 'edge';
+export const runtime = env.APP_ENV === 'development' ? 'nodejs' : 'edge';
 
 export default async function Home() {
 	const hello = await api.post.hello({ text: 'from tRPC' });
@@ -36,15 +37,7 @@ export default async function Home() {
 				<div className='flex flex-col items-center gap-2'>
 					<p className='text-2xl text-white'>{hello ? hello.greeting : 'Loading tRPC query...'}</p>
 				</div>
-
-				<CrudShowcase />
 			</div>
 		</main>
 	);
-}
-
-async function CrudShowcase() {
-	const latestPost = await api.post.getLatest();
-
-	return <div className='w-full max-w-xs'>Hello there</div>;
 }

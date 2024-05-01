@@ -13,9 +13,9 @@
 		"page:build": "npx @cloudflare/next-on-pages"
 	},
 	"dependencies": {
-		"@repo/ui": "workspace:*",
 		"@libsql/client": "0.6.0",
 		"@lucia-auth/adapter-drizzle": "1.0.7",
+		"@repo/ui": "workspace:*",
 		"@t3-oss/env-nextjs": "0.10.1",
 		"@tanstack/react-query": "5.32.1",
 		"@trpc/client": "next",
@@ -31,6 +31,7 @@
 		"zod": "3.23.5"
 	},
 	"devDependencies": {
+		"@cloudflare/next-on-pages": "^1.11.2",
 		"@repo/eslint-config": "workspace:*",
 		"@repo/typescript-config": "workspace:*",
 		"@types/eslint": "8.56.10",
