@@ -32,6 +32,9 @@ importers:
       turbo:
         specifier: 1.13.3
         version: 1.13.3
+      wrangler:
+        specifier: 3.53.0
+        version: 3.53.0(@cloudflare/workers-types@4.20240423.0)
       yargs:
         specifier: 17.7.2
         version: 17.7.2
@@ -88,10 +91,10 @@ importers:
         version: 3.23.5
     devDependencies:
       '@cloudflare/next-on-pages':
-        specifier: ^1.11.2
+        specifier: 1.11.2
         version: 1.11.2(@cloudflare/workers-types@4.20240423.0)(vercel@34.1.7)(wrangler@3.53.0(@cloudflare/workers-types@4.20240423.0))
       '@cloudflare/workers-types':
-        specifier: ^4.20240423.0
+        specifier: 4.20240423.0
         version: 4.20240423.0
       '@repo/eslint-config':
         specifier: workspace:*
@@ -12510,14 +12513,13 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-module-utils@2.8.1(@typescript-eslint/parser@7.8.0(eslint@8.57.0)(typescript@5.4.5))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@7.8.0(eslint@8.57.0)(typescript@5.4.5))(eslint-plugin-import@2.29.1)(eslint@8.57.0))(eslint@8.57.0):
+  eslint-module-utils@2.8.1(@typescript-eslint/parser@7.8.0(eslint@8.57.0)(typescript@5.4.5))(eslint-import-resolver-node@0.3.9)(eslint@8.57.0):
     dependencies:
       debug: 3.2.7
     optionalDependencies:
       '@typescript-eslint/parser': 7.8.0(eslint@8.57.0)(typescript@5.4.5)
       eslint: 8.57.0
       eslint-import-resolver-node: 0.3.9
-      eslint-import-resolver-typescript: 3.6.1(@typescript-eslint/parser@7.8.0(eslint@8.57.0)(typescript@5.4.5))(eslint-plugin-import@2.29.1)(eslint@8.57.0)
     transitivePeerDependencies:
       - supports-color
 
@@ -12551,7 +12553,7 @@ snapshots:
       doctrine: 2.1.0
       eslint: 8.57.0
       eslint-import-resolver-node: 0.3.9
-      eslint-module-utils: 2.8.1(@typescript-eslint/parser@7.8.0(eslint@8.57.0)(typescript@5.4.5))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@7.8.0(eslint@8.57.0)(typescript@5.4.5))(eslint-plugin-import@2.29.1)(eslint@8.57.0))(eslint@8.57.0)
+      eslint-module-utils: 2.8.1(@typescript-eslint/parser@7.8.0(eslint@8.57.0)(typescript@5.4.5))(eslint-import-resolver-node@0.3.9)(eslint@8.57.0)
       hasown: 2.0.2
       is-core-module: 2.13.1
       is-glob: 4.0.3
