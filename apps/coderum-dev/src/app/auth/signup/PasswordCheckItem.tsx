@@ -1,7 +1,7 @@
 export const PasswordCheckItem = (props: { isPassed: boolean; message: string }) => {
 	if (props.isPassed) {
 		return (
-			<li className='text-green-700 space-x-2'>
+			<li className='space-x-2 text-green-700'>
 				<svg
 					xmlns='http://www.w3.org/2000/svg'
 					width={12}
@@ -12,7 +12,7 @@ export const PasswordCheckItem = (props: { isPassed: boolean; message: string })
 					strokeWidth={3}
 					strokeLinecap='round'
 					strokeLinejoin='round'
-					className='-ml-1 inline-block mr-2'
+					className='-ml-1 mr-2 inline-block'
 				>
 					<polyline points='20 6 9 17 4 12' />
 				</svg>
@@ -22,7 +22,7 @@ export const PasswordCheckItem = (props: { isPassed: boolean; message: string })
 	}
 	return (
 		<li className='text-muted-foreground flex items-center'>
-			<div className='bg-muted-foreground inline-block h-1 w-1 rounded-full mr-3'></div>
+			<div className='bg-muted-foreground mr-3 inline-block h-1 w-1 rounded-full'></div>
 			{props.message}
 		</li>
 	);

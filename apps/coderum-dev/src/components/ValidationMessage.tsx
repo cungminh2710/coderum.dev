@@ -10,7 +10,7 @@ const ValidationMessage = (props: ValidationMessageProps) => {
 	return (
 		<>
 			{props.errorMessage && (
-				<div className={cn('mt-2 flex items-center gap-x-2 text-sm text-destructive', props.className)}>
+				<div className={cn('text-destructive mt-2 flex items-center gap-x-2 text-sm', props.className)}>
 					<div>
 						{props.icon ?? (
 							<svg
