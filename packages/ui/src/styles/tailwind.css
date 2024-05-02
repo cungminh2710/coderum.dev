@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.3 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -212,6 +212,8 @@ textarea {
 	/* 1 */
 	line-height: inherit;
 	/* 1 */
+	letter-spacing: inherit;
+	/* 1 */
 	color: inherit;
 	/* 1 */
 	margin: 0;
@@ -235,9 +237,9 @@ select {
 */
 
 button,
-[type='button'],
-[type='reset'],
-[type='submit'] {
+input:where([type='button']),
+input:where([type='reset']),
+input:where([type='submit']) {
 	-webkit-appearance: button;
 	/* 1 */
 	background-color: transparent;
@@ -454,7 +456,7 @@ video {
 	--card-foreground: 240 10% 3.9%;
 	--popover: 0 0% 100%;
 	--popover-foreground: 240 10% 3.9%;
-	--primary: 346.8 77.2% 49.8%;
+	--primary: 142.1 76.2% 36.3%;
 	--primary-foreground: 355.7 100% 97.3%;
 	--secondary: 240 4.8% 95.9%;
 	--secondary-foreground: 240 5.9% 10%;
@@ -466,7 +468,7 @@ video {
 	--destructive-foreground: 0 0% 98%;
 	--border: 240 5.9% 90%;
 	--input: 240 5.9% 90%;
-	--ring: 346.8 77.2% 49.8%;
+	--ring: 142.1 76.2% 36.3%;
 	--radius: 1rem;
 }
 
@@ -532,6 +534,10 @@ body {
 	--tw-backdrop-opacity:  ;
 	--tw-backdrop-saturate:  ;
 	--tw-backdrop-sepia:  ;
+	--tw-contain-size:  ;
+	--tw-contain-layout:  ;
+	--tw-contain-paint:  ;
+	--tw-contain-style:  ;
 }
 
 ::backdrop {
@@ -582,6 +588,10 @@ body {
 	--tw-backdrop-opacity:  ;
 	--tw-backdrop-saturate:  ;
 	--tw-backdrop-sepia:  ;
+	--tw-contain-size:  ;
+	--tw-contain-layout:  ;
+	--tw-contain-paint:  ;
+	--tw-contain-style:  ;
 }
 
 .sr-only {
@@ -1393,7 +1403,7 @@ body {
 	--tw-enter-translate-y: -48%;
 }
 
-:is(.dark .dark\:border-destructive) {
+.dark\:border-destructive:is(.dark *) {
 	border-color: hsl(var(--destructive));
 }
 

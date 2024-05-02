@@ -13,6 +13,7 @@
 		"page:build": "npx @cloudflare/next-on-pages"
 	},
 	"dependencies": {
+		"@hookform/resolvers": "3.3.4",
 		"@libsql/client": "0.6.0",
 		"@lucia-auth/adapter-drizzle": "1.0.7",
 		"@repo/ui": "workspace:*",
@@ -21,11 +22,13 @@
 		"@trpc/client": "next",
 		"@trpc/react-query": "next",
 		"@trpc/server": "next",
-		"drizzle-orm": "0.30.9",
+		"drizzle-orm": "0.30.10",
 		"lucia": "3.2.0",
+		"lucide-react": "0.376.0",
 		"next": "14.2.3",
 		"react": "18.3.1",
 		"react-dom": "18.3.1",
+		"react-hook-form": "7.51.3",
 		"server-only": "0.0.1",
 		"superjson": "2.2.1",
 		"zod": "3.23.5"
