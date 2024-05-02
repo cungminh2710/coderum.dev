@@ -38,6 +38,9 @@ importers:
 
   apps/coderum-dev:
     dependencies:
+      '@hookform/resolvers':
+        specifier: 3.3.4
+        version: 3.3.4(react-hook-form@7.51.3(react@18.3.1))
       '@libsql/client':
         specifier: 0.6.0
         version: 0.6.0
@@ -68,6 +71,9 @@ importers:
       lucia:
         specifier: 3.2.0
         version: 3.2.0
+      lucide-react:
+        specifier: 0.376.0
+        version: 0.376.0(react@18.3.1)
       next:
         specifier: 14.2.3
         version: 14.2.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -77,6 +83,9 @@ importers:
       react-dom:
         specifier: 18.3.1
         version: 18.3.1(react@18.3.1)
+      react-hook-form:
+        specifier: 7.51.3
+        version: 7.51.3(react@18.3.1)
       server-only:
         specifier: 0.0.1
         version: 0.0.1
