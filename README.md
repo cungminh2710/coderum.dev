@@ -164,4 +164,3 @@ Once the PR is reviewed, click Enable Auto-merge to run the necessary CI checks 
 Congratulations 🎉🎉 The Coderum team thanks you ✨.
 
 Once your PR is merged, your contributions will be publicly visible and we will tag the appropriate version to deploy your changes
-
