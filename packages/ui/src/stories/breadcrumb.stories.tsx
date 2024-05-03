@@ -8,7 +8,6 @@ import {
 	BreadcrumbPage,
 	BreadcrumbEllipsis,
 } from '../breadcrumb';
-import { fn } from '@storybook/test';
 import { Slash } from 'lucide-react';
 
 const meta = {
@@ -19,7 +18,7 @@ const meta = {
 	},
 	tags: ['autodocs'],
 	argTypes: {},
-	args: { onClick: fn() },
+	args: {},
 } satisfies Meta<typeof Breadcrumb>;
 
 export default meta;
