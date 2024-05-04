@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { api } from '@/trpc/server';
 import { env } from '@/env';
 
-export const runtime = env.APP_ENV === 'development' ? 'nodejs' : 'edge';
+export const runtime = 'edge';
 
 export default async function Home() {
 	const hello = await api.post.hello({ text: 'from tRPC' });
