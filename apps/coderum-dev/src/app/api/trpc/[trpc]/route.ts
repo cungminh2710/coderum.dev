@@ -5,7 +5,7 @@ import { env } from '@/env';
 import { appRouter } from '@/server/api/root';
 import { createTRPCContext } from '@/server/api/trpc';
 
-export const runtime = 'edge';
+export const runtime = env.APP_ENV === 'development' ? 'nodejs' : 'edge';
 
 /**
  * This wraps the `createTRPCContext` helper and provides the required context for the tRPC API when
@@ -24,7 +24,7 @@ const handler = (req: NextRequest) =>
 		router: appRouter,
 		createContext: () => createContext(req),
 		onError:
-			env.NODE_ENV === 'development'
+			env.APP_ENV === 'development'
 				? ({ path, error }) => {
 						console.error(`❌ tRPC failed on ${path ?? '<no-path>'}: ${error.message}`);
 					}

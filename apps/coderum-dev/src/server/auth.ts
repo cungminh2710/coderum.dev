@@ -2,6 +2,7 @@ import { Lucia } from 'lucia';
 import { DrizzleSQLiteAdapter } from '@lucia-auth/adapter-drizzle';
 import { db } from './db';
 import { sessionTable, userTable } from './db/schema';
+import { env } from '@/env';
 
 export const adapter = new DrizzleSQLiteAdapter(db, sessionTable, userTable);
 
@@ -9,7 +10,7 @@ export const lucia = new Lucia(adapter, {
 	sessionCookie: {
 		attributes: {
 			// set to `true` when using HTTPS
-			secure: process.env.NODE_ENV === 'production',
+			secure: env.APP_ENV === 'production',
 		},
 	},
 	getUserAttributes: (attributes) => {
