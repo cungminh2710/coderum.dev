@@ -33,8 +33,8 @@ importers:
         specifier: 1.13.3
         version: 1.13.3
       wrangler:
-        specifier: 3.53.0
-        version: 3.53.0(@cloudflare/workers-types@4.20240423.0)
+        specifier: 3.53.1
+        version: 3.53.1(@cloudflare/workers-types@4.20240423.0)
       yargs:
         specifier: 17.7.2
         version: 17.7.2
@@ -101,7 +101,7 @@ importers:
     devDependencies:
       '@cloudflare/next-on-pages':
         specifier: 1.11.2
-        version: 1.11.2(@cloudflare/workers-types@4.20240423.0)(vercel@34.1.7)(wrangler@3.53.0(@cloudflare/workers-types@4.20240423.0))
+        version: 1.11.2(@cloudflare/workers-types@4.20240423.0)(vercel@34.1.7)(wrangler@3.53.1(@cloudflare/workers-types@4.20240423.0))
       '@cloudflare/workers-types':
         specifier: 4.20240423.0
         version: 4.20240423.0
@@ -7635,8 +7635,8 @@ packages:
     engines: {node: '>=16'}
     hasBin: true
 
-  wrangler@3.53.0:
-    resolution: {integrity: sha512-JxkvCQekL9j8Mu4CEKM/HEVyDnymWzKQuMUuJH0yum1AilutD5HAP9kVVYmvu7BvwlRyRUAj8TI5OUxXnLCEpQ==}
+  wrangler@3.53.1:
+    resolution: {integrity: sha512-bdMRQdHYdvowIwOhEMFkARIZUh56aDw7HLUZ/2JreBjj760osXE4Fc4L1TCkfRRBWgB6/LKF5LA4OcvORMYmHg==}
     engines: {node: '>=16.17.0'}
     hasBin: true
     peerDependencies:
@@ -8550,7 +8550,7 @@ snapshots:
     dependencies:
       mime: 3.0.0
 
-  '@cloudflare/next-on-pages@1.11.2(@cloudflare/workers-types@4.20240423.0)(vercel@34.1.7)(wrangler@3.53.0(@cloudflare/workers-types@4.20240423.0))':
+  '@cloudflare/next-on-pages@1.11.2(@cloudflare/workers-types@4.20240423.0)(vercel@34.1.7)(wrangler@3.53.1(@cloudflare/workers-types@4.20240423.0))':
     dependencies:
       acorn: 8.11.3
       ast-types: 0.14.2
@@ -8565,7 +8565,7 @@ snapshots:
       pcre-to-regexp: 1.1.0
       semver: 7.6.0
       vercel: 34.1.7
-      wrangler: 3.53.0(@cloudflare/workers-types@4.20240423.0)
+      wrangler: 3.53.1(@cloudflare/workers-types@4.20240423.0)
     optionalDependencies:
       '@cloudflare/workers-types': 4.20240423.0
     transitivePeerDependencies:
@@ -15847,7 +15847,7 @@ snapshots:
       '@cloudflare/workerd-linux-arm64': 1.20240419.0
       '@cloudflare/workerd-windows-64': 1.20240419.0
 
-  wrangler@3.53.0(@cloudflare/workers-types@4.20240423.0):
+  wrangler@3.53.1(@cloudflare/workers-types@4.20240423.0):
     dependencies:
       '@cloudflare/kv-asset-handler': 0.3.2
       '@esbuild-plugins/node-globals-polyfill': 0.2.3(esbuild@0.17.19)
