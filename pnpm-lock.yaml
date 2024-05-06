@@ -34,7 +34,7 @@ importers:
         version: 1.13.3
       wrangler:
         specifier: 3.53.1
-        version: 3.53.1(@cloudflare/workers-types@4.20240423.0)
+        version: 3.53.1(@cloudflare/workers-types@4.20240502.0)
       yargs:
         specifier: 17.7.2
         version: 17.7.2
@@ -70,7 +70,7 @@ importers:
         version: 11.0.0-rc.364
       drizzle-orm:
         specifier: 0.30.10
-        version: 0.30.10(@cloudflare/workers-types@4.20240423.0)(@libsql/client@0.6.0)(@types/react@18.3.1)(bun-types@1.1.6)(react@18.3.1)
+        version: 0.30.10(@cloudflare/workers-types@4.20240502.0)(@libsql/client@0.6.0)(@types/react@18.3.1)(bun-types@1.1.6)(react@18.3.1)
       lucia:
         specifier: 3.2.0
         version: 3.2.0
@@ -101,10 +101,10 @@ importers:
     devDependencies:
       '@cloudflare/next-on-pages':
         specifier: 1.11.2
-        version: 1.11.2(@cloudflare/workers-types@4.20240423.0)(vercel@34.1.7)(wrangler@3.53.1(@cloudflare/workers-types@4.20240423.0))
+        version: 1.11.2(@cloudflare/workers-types@4.20240502.0)(vercel@34.1.7)(wrangler@3.53.1(@cloudflare/workers-types@4.20240502.0))
       '@cloudflare/workers-types':
-        specifier: 4.20240423.0
-        version: 4.20240423.0
+        specifier: 4.20240502.0
+        version: 4.20240502.0
       '@repo/eslint-config':
         specifier: workspace:*
         version: link:../../packages/eslint-config
@@ -1017,8 +1017,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@cloudflare/workers-types@4.20240423.0':
-    resolution: {integrity: sha512-ssuccb3j+URp6mP2p0PcQE9vmS3YeKBQnALHF9P3yQfUAFozuhTsDTbqmL+zPrJvUcG7SL2xVQkNDF9QJeKDZw==}
+  '@cloudflare/workers-types@4.20240502.0':
+    resolution: {integrity: sha512-OB1jIyPOzyOcuZFHWhsQnkRLN6u8+jmU9X3T4KZlGgn3Ivw8pBiswhLOp+yFeChR3Y4/5+V0hPFRko5SReordg==}
 
   '@colors/colors@1.5.0':
     resolution: {integrity: sha512-ooWCrlZP11i8GImSjTHYHLkvFDP48nS4+204nGb1RiX/WXYHmJA2III9/e2DWVabCESdW7hBAEzHRqUn9OUVvQ==}
@@ -8550,7 +8550,7 @@ snapshots:
     dependencies:
       mime: 3.0.0
 
-  '@cloudflare/next-on-pages@1.11.2(@cloudflare/workers-types@4.20240423.0)(vercel@34.1.7)(wrangler@3.53.1(@cloudflare/workers-types@4.20240423.0))':
+  '@cloudflare/next-on-pages@1.11.2(@cloudflare/workers-types@4.20240502.0)(vercel@34.1.7)(wrangler@3.53.1(@cloudflare/workers-types@4.20240502.0))':
     dependencies:
       acorn: 8.11.3
       ast-types: 0.14.2
@@ -8565,9 +8565,9 @@ snapshots:
       pcre-to-regexp: 1.1.0
       semver: 7.6.0
       vercel: 34.1.7
-      wrangler: 3.53.1(@cloudflare/workers-types@4.20240423.0)
+      wrangler: 3.53.1(@cloudflare/workers-types@4.20240502.0)
     optionalDependencies:
-      '@cloudflare/workers-types': 4.20240423.0
+      '@cloudflare/workers-types': 4.20240502.0
     transitivePeerDependencies:
       - bufferutil
       - supports-color
@@ -8588,7 +8588,7 @@ snapshots:
   '@cloudflare/workerd-windows-64@1.20240419.0':
     optional: true
 
-  '@cloudflare/workers-types@4.20240423.0': {}
+  '@cloudflare/workers-types@4.20240502.0': {}
 
   '@colors/colors@1.5.0':
     optional: true
@@ -11942,9 +11942,9 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  drizzle-orm@0.30.10(@cloudflare/workers-types@4.20240423.0)(@libsql/client@0.6.0)(@types/react@18.3.1)(bun-types@1.1.6)(react@18.3.1):
+  drizzle-orm@0.30.10(@cloudflare/workers-types@4.20240502.0)(@libsql/client@0.6.0)(@types/react@18.3.1)(bun-types@1.1.6)(react@18.3.1):
     optionalDependencies:
-      '@cloudflare/workers-types': 4.20240423.0
+      '@cloudflare/workers-types': 4.20240502.0
       '@libsql/client': 0.6.0
       '@types/react': 18.3.1
       bun-types: 1.1.6
@@ -15847,7 +15847,7 @@ snapshots:
       '@cloudflare/workerd-linux-arm64': 1.20240419.0
       '@cloudflare/workerd-windows-64': 1.20240419.0
 
-  wrangler@3.53.1(@cloudflare/workers-types@4.20240423.0):
+  wrangler@3.53.1(@cloudflare/workers-types@4.20240502.0):
     dependencies:
       '@cloudflare/kv-asset-handler': 0.3.2
       '@esbuild-plugins/node-globals-polyfill': 0.2.3(esbuild@0.17.19)
@@ -15864,7 +15864,7 @@ snapshots:
       source-map: 0.6.1
       xxhash-wasm: 1.0.2
     optionalDependencies:
-      '@cloudflare/workers-types': 4.20240423.0
+      '@cloudflare/workers-types': 4.20240502.0
       fsevents: 2.3.3
     transitivePeerDependencies:
       - bufferutil
