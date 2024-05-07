@@ -55,19 +55,19 @@ importers:
         version: link:../../packages/ui
       '@t3-oss/env-nextjs':
         specifier: 0.10.1
-        version: 0.10.1(typescript@5.4.5)(zod@3.23.6)
+        version: 0.10.1(typescript@5.4.5)(zod@3.23.7)
       '@tanstack/react-query':
         specifier: 5.35.1
         version: 5.35.1(react@18.3.1)
       '@trpc/client':
         specifier: next
-        version: 11.0.0-rc.364(@trpc/server@11.0.0-rc.364)
+        version: 11.0.0-rc.366(@trpc/server@11.0.0-rc.366)
       '@trpc/react-query':
         specifier: next
-        version: 11.0.0-rc.364(@tanstack/react-query@5.35.1(react@18.3.1))(@trpc/client@11.0.0-rc.364(@trpc/server@11.0.0-rc.364))(@trpc/server@11.0.0-rc.364)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 11.0.0-rc.366(@tanstack/react-query@5.35.1(react@18.3.1))(@trpc/client@11.0.0-rc.366(@trpc/server@11.0.0-rc.366))(@trpc/server@11.0.0-rc.366)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@trpc/server':
         specifier: next
-        version: 11.0.0-rc.364
+        version: 11.0.0-rc.366
       drizzle-orm:
         specifier: 0.30.10
         version: 0.30.10(@cloudflare/workers-types@4.20240502.0)(@libsql/client@0.6.0)(@types/react@18.3.1)(bun-types@1.1.6)(react@18.3.1)
@@ -96,8 +96,8 @@ importers:
         specifier: 2.2.1
         version: 2.2.1
       zod:
-        specifier: 3.23.6
-        version: 3.23.6
+        specifier: 3.23.7
+        version: 3.23.7
     devDependencies:
       '@cloudflare/next-on-pages':
         specifier: 1.11.2
@@ -237,8 +237,8 @@ importers:
         specifier: 2.3.0
         version: 2.3.0
       zod:
-        specifier: 3.23.6
-        version: 3.23.6
+        specifier: 3.23.7
+        version: 3.23.7
     devDependencies:
       '@chromatic-com/storybook':
         specifier: 1.3.3
@@ -2836,22 +2836,22 @@ packages:
   '@tootallnate/quickjs-emscripten@0.23.0':
     resolution: {integrity: sha512-C5Mc6rdnsaJDjO3UpGW/CQTHtCKaYlScZTly4JIu97Jxo/odCiH0ITnDXSJPTOrEKk/ycSZ0AOgTmkDtkOsvIA==}
 
-  '@trpc/client@11.0.0-rc.364':
-    resolution: {integrity: sha512-k9ZH7I0OOBFME9fZJ1JI0ZjvPEV64bvoT20kWHkFeMH5trJmK1tzcc/q7c7cLBY4pziLPqBDPFw2qax09vyRTg==}
+  '@trpc/client@11.0.0-rc.366':
+    resolution: {integrity: sha512-bIbcF/UhCifU5i9hbbaMlmOS2NgnRq5W0pJH2SJhrp6jyIIaCF+uNAIZtkfO0GriBb0agBmGIXqvGLFEexiTKA==}
     peerDependencies:
-      '@trpc/server': 11.0.0-rc.364+d95fb467b
+      '@trpc/server': 11.0.0-rc.366+237dbb3f9
 
-  '@trpc/react-query@11.0.0-rc.364':
-    resolution: {integrity: sha512-updB1uOVHS/1NK+hclt8OK/Im0GYD8mIRTxs96hZhfaT6tqUhij/wWWG0U6OofxPGC/MZs75ojQeq8Uag9Tr5g==}
+  '@trpc/react-query@11.0.0-rc.366':
+    resolution: {integrity: sha512-LCdJFymEdaKBBNRQPVAcEw9qNu3m+n9hH3qIPKDanLWYlo4h+8lQnj8JIhYpClD2G3gkvD0ZSZ+F54QvwrI3nA==}
     peerDependencies:
       '@tanstack/react-query': ^5.25.0
-      '@trpc/client': 11.0.0-rc.364+d95fb467b
-      '@trpc/server': 11.0.0-rc.364+d95fb467b
+      '@trpc/client': 11.0.0-rc.366+237dbb3f9
+      '@trpc/server': 11.0.0-rc.366+237dbb3f9
       react: '>=18.2.0'
       react-dom: '>=18.2.0'
 
-  '@trpc/server@11.0.0-rc.364':
-    resolution: {integrity: sha512-sGlrb2jSCiU74TrJ+N+WxIcJIUDyo0WOy0y30vIArw6oHFXjeithgxjvIu+PbN+VWt/Gt4ee8kVhnmxCW4X/Qw==}
+  '@trpc/server@11.0.0-rc.366':
+    resolution: {integrity: sha512-Pr7SdpIVrOGtIGt9vs7i3v0hqzlpXbi8/8RV7XfrXVJ5hlzKYOz5VE0AjckhHXuhrUlpTGTDm0/2nz0ywLcQ2g==}
 
   '@ts-morph/common@0.11.1':
     resolution: {integrity: sha512-7hWZS0NRpEsNV8vWJzg7FEz6V8MaLNeJOmwmghqUXTpzk16V1LLZhdo+4QvE/+zv4cVci0OviuJFnqhEfoV3+g==}
@@ -7735,11 +7735,8 @@ packages:
   youch@3.3.3:
     resolution: {integrity: sha512-qSFXUk3UZBLfggAW3dJKg0BMblG5biqSF8M34E06o5CSsZtH92u9Hqmj2RzGiHDi64fhe83+4tENFP2DB6t6ZA==}
 
-  zod@3.23.5:
-    resolution: {integrity: sha512-fkwiq0VIQTksNNA131rDOsVJcns0pfVUjHzLrNBiF/O/Xxb5lQyEXkhZWcJ7npWsYlvs+h0jFWXXy4X46Em1JA==}
-
-  zod@3.23.6:
-    resolution: {integrity: sha512-RTHJlZhsRbuA8Hmp/iNL7jnfc4nZishjsanDAfEY1QpDQZCahUp3xDzl+zfweE9BklxMUcgBgS1b7Lvie/ZVwA==}
+  zod@3.23.7:
+    resolution: {integrity: sha512-NBeIoqbtOiUMomACV/y+V3Qfs9+Okr18vR5c/5pHClPpufWOrsx8TENboDPe265lFdfewX2yBtNTLPvnmCxwog==}
 
 snapshots:
 
@@ -8967,10 +8964,10 @@ snapshots:
 
   '@hono/node-server@1.11.1': {}
 
-  '@hono/zod-validator@0.2.1(hono@4.2.9)(zod@3.23.6)':
+  '@hono/zod-validator@0.2.1(hono@4.2.9)(zod@3.23.7)':
     dependencies:
       hono: 4.2.9
-      zod: 3.23.6
+      zod: 3.23.7
 
   '@hookform/resolvers@3.3.4(react-hook-form@7.51.4(react@18.3.1))':
     dependencies:
@@ -10375,16 +10372,16 @@ snapshots:
       '@swc/counter': 0.1.3
       tslib: 2.6.2
 
-  '@t3-oss/env-core@0.10.1(typescript@5.4.5)(zod@3.23.6)':
+  '@t3-oss/env-core@0.10.1(typescript@5.4.5)(zod@3.23.7)':
     dependencies:
-      zod: 3.23.6
+      zod: 3.23.7
     optionalDependencies:
       typescript: 5.4.5
 
-  '@t3-oss/env-nextjs@0.10.1(typescript@5.4.5)(zod@3.23.6)':
+  '@t3-oss/env-nextjs@0.10.1(typescript@5.4.5)(zod@3.23.7)':
     dependencies:
-      '@t3-oss/env-core': 0.10.1(typescript@5.4.5)(zod@3.23.6)
-      zod: 3.23.6
+      '@t3-oss/env-core': 0.10.1(typescript@5.4.5)(zod@3.23.7)
+      zod: 3.23.7
     optionalDependencies:
       typescript: 5.4.5
 
@@ -10427,19 +10424,19 @@ snapshots:
 
   '@tootallnate/quickjs-emscripten@0.23.0': {}
 
-  '@trpc/client@11.0.0-rc.364(@trpc/server@11.0.0-rc.364)':
+  '@trpc/client@11.0.0-rc.366(@trpc/server@11.0.0-rc.366)':
     dependencies:
-      '@trpc/server': 11.0.0-rc.364
+      '@trpc/server': 11.0.0-rc.366
 
-  '@trpc/react-query@11.0.0-rc.364(@tanstack/react-query@5.35.1(react@18.3.1))(@trpc/client@11.0.0-rc.364(@trpc/server@11.0.0-rc.364))(@trpc/server@11.0.0-rc.364)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@trpc/react-query@11.0.0-rc.366(@tanstack/react-query@5.35.1(react@18.3.1))(@trpc/client@11.0.0-rc.366(@trpc/server@11.0.0-rc.366))(@trpc/server@11.0.0-rc.366)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@tanstack/react-query': 5.35.1(react@18.3.1)
-      '@trpc/client': 11.0.0-rc.364(@trpc/server@11.0.0-rc.364)
-      '@trpc/server': 11.0.0-rc.364
+      '@trpc/client': 11.0.0-rc.366(@trpc/server@11.0.0-rc.366)
+      '@trpc/server': 11.0.0-rc.366
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  '@trpc/server@11.0.0-rc.364': {}
+  '@trpc/server@11.0.0-rc.366': {}
 
   '@ts-morph/common@0.11.1':
     dependencies:
@@ -11924,7 +11921,7 @@ snapshots:
     dependencies:
       '@esbuild-kit/esm-loader': 2.6.5
       '@hono/node-server': 1.11.1
-      '@hono/zod-validator': 0.2.1(hono@4.2.9)(zod@3.23.6)
+      '@hono/zod-validator': 0.2.1(hono@4.2.9)(zod@3.23.7)
       camelcase: 7.0.1
       chalk: 5.3.0
       commander: 9.5.0
@@ -11938,7 +11935,7 @@ snapshots:
       minimatch: 7.4.6
       semver: 7.6.0
       superjson: 2.2.1
-      zod: 3.23.6
+      zod: 3.23.7
     transitivePeerDependencies:
       - supports-color
 
@@ -13952,7 +13949,7 @@ snapshots:
       workerd: 1.20240419.0
       ws: 8.17.0
       youch: 3.3.3
-      zod: 3.23.5
+      zod: 3.23.7
     transitivePeerDependencies:
       - bufferutil
       - supports-color
@@ -15955,6 +15952,4 @@ snapshots:
       mustache: 4.2.0
       stacktracey: 2.1.8
 
-  zod@3.23.5: {}
-
-  zod@3.23.6: {}
+  zod@3.23.7: {}
