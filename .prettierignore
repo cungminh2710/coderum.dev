@@ -3,3 +3,5 @@ storybook-static
 .drawio
 **/.next/
 **/dist/
+
+tailwind.css

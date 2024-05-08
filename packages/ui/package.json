@@ -5,9 +5,9 @@
 	"scripts": {
 		"lint": "eslint . --max-warnings 0",
 		"generate:component": "turbo gen react-component",
-		"dev": "pnpm run tailwind && storybook dev -p 6006",
+		"dev": "concurrently \"pnpm run tailwind\" \"storybook dev -p 6006\"",
 		"build-storybook": "storybook build",
-		"tailwind": "tailwindcss -i ./src/styles/global.css -o ./src/styles/tailwind.css"
+		"tailwind": "tailwindcss -i ./src/styles/global.css -o ./src/styles/tailwind.css --watch"
 	},
 	"devDependencies": {
 		"@chromatic-com/storybook": "1.3.4",
@@ -27,6 +27,7 @@
 		"@types/node": "20.12.07",
 		"@types/react": "18.3.1",
 		"@types/react-dom": "18.3.0",
+		"concurrently": "8.2.2",
 		"eslint": "8.57.0",
 		"eslint-plugin-storybook": "0.8.0",
 		"react": "18.3.1",
