@@ -6,7 +6,7 @@
 		"lint": "eslint . --max-warnings 0",
 		"generate:component": "turbo gen react-component",
 		"dev": "concurrently \"pnpm run tailwind\" \"storybook dev -p 6006\"",
-		"build-storybook": "storybook build",
+		"build-storybook": "tailwindcss -i ./src/styles/global.css -o ./src/styles/tailwind.css && storybook build",
 		"tailwind": "tailwindcss -i ./src/styles/global.css -o ./src/styles/tailwind.css --watch"
 	},
 	"devDependencies": {
