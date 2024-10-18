@@ -15,14 +15,14 @@ importers:
         specifier: workspace:*
         version: link:packages/typescript-config
       '@types/bun':
-        specifier: 1.1.1
-        version: 1.1.1
+        specifier: 1.1.11
+        version: 1.1.11
       '@types/yargs':
         specifier: 17.0.32
         version: 17.0.32
       bun:
-        specifier: 1.1.7
-        version: 1.1.7
+        specifier: 1.1.31
+        version: 1.1.31
       prettier:
         specifier: 3.2.5
         version: 3.2.5
@@ -61,16 +61,16 @@ importers:
         version: 5.35.1(react@18.3.1)
       '@trpc/client':
         specifier: next
-        version: 11.0.0-rc.366(@trpc/server@11.0.0-rc.366)
+        version: 11.0.0-rc.586(@trpc/server@11.0.0-rc.586)
       '@trpc/react-query':
         specifier: next
-        version: 11.0.0-rc.366(@tanstack/react-query@5.35.1(react@18.3.1))(@trpc/client@11.0.0-rc.366(@trpc/server@11.0.0-rc.366))(@trpc/server@11.0.0-rc.366)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 11.0.0-rc.586(@tanstack/react-query@5.35.1(react@18.3.1))(@trpc/client@11.0.0-rc.586(@trpc/server@11.0.0-rc.586))(@trpc/server@11.0.0-rc.586)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@trpc/server':
         specifier: next
-        version: 11.0.0-rc.366
+        version: 11.0.0-rc.586
       drizzle-orm:
         specifier: 0.30.10
-        version: 0.30.10(@cloudflare/workers-types@4.20240502.0)(@libsql/client@0.6.0)(@types/react@18.3.1)(bun-types@1.1.6)(react@18.3.1)
+        version: 0.30.10(@cloudflare/workers-types@4.20240502.0)(@libsql/client@0.6.0)(@types/react@18.3.1)(bun-types@1.1.30)(react@18.3.1)
       lucia:
         specifier: 3.2.0
         version: 3.2.0
@@ -257,7 +257,7 @@ importers:
         version: 8.0.10(@types/react@18.3.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@storybook/addon-interactions':
         specifier: 8.0.10
-        version: 8.0.10(@types/bun@1.1.1)
+        version: 8.0.10(@types/bun@1.1.11)
       '@storybook/addon-links':
         specifier: 8.0.10
         version: 8.0.10(react@18.3.1)
@@ -278,7 +278,7 @@ importers:
         version: 8.0.10(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rollup@4.17.1)(typescript@5.4.5)(vite@5.2.10(@types/node@20.12.7))
       '@storybook/test':
         specifier: 8.0.10
-        version: 8.0.10(@types/bun@1.1.1)
+        version: 8.0.10(@types/bun@1.1.11)
       '@turbo/gen':
         specifier: 1.13.3
         version: 1.13.3(@types/node@20.12.7)(typescript@5.4.5)
@@ -1071,9 +1071,11 @@ packages:
 
   '@esbuild-kit/core-utils@3.3.2':
     resolution: {integrity: sha512-sPRAnw9CdSsRmEtnsl2WXWdyquogVpB3yZ3dgwJfe8zrOzTsV7cJvmwrKVa+0ma5BoiGJ+BoqkMvawbayKUsqQ==}
+    deprecated: 'Merged into tsx: https://tsx.is'
 
   '@esbuild-kit/esm-loader@2.6.5':
     resolution: {integrity: sha512-FxEMIkJKnodyA1OaCUoEvbYRkoZlLZ4d/eXFu9Fh8CbBBgP5EmZxrfTRyN0qpXZ4vOvqnE5YdRdcrmUUXuU+dA==}
+    deprecated: 'Merged into tsx: https://tsx.is'
 
   '@esbuild-plugins/node-globals-polyfill@0.2.3':
     resolution: {integrity: sha512-r3MIryXDeXDOZh7ih1l/yE9ZLORCd5e8vWg02azWRGj5SPTuoh69A2AIyn0Z31V/kHBfZ4HgWJ+OK3GTTwLmnw==}
@@ -1685,6 +1687,7 @@ packages:
   '@humanwhocodes/config-array@0.11.14':
     resolution: {integrity: sha512-3T8LkOmg45BV5FICb15QQMsyUSWrQ8AygVfC7ZG32zOalnqrilm018ZVCw0eapXux8FtA33q8PSRSstjee3jSg==}
     engines: {node: '>=10.10.0'}
+    deprecated: Use @eslint/config-array instead
 
   '@humanwhocodes/module-importer@1.0.1':
     resolution: {integrity: sha512-bxveV4V8v5Yb4ncFTT3rPSgZBOpCkjfK0y4oVVVJwIuDVBRMDXrPyXRL988i5ap9m9bnyEEjWfm5WkBmtffLfA==}
@@ -1692,6 +1695,7 @@ packages:
 
   '@humanwhocodes/object-schema@2.0.3':
     resolution: {integrity: sha512-93zYdMES/c1D69yZiKDBj0V24vqNzB/koF26KPaagAfd3P/4gUlh3Dys5ogAK+Exi9QyzlD8x/08Zt7wIKcDcA==}
+    deprecated: Use @eslint/object-schema instead
 
   '@isaacs/cliui@8.0.2':
     resolution: {integrity: sha512-O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA==}
@@ -2057,43 +2061,43 @@ packages:
     resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
     engines: {node: '>= 8'}
 
-  '@oven/bun-darwin-aarch64@1.1.7':
-    resolution: {integrity: sha512-6xH96IjcQlnbsGziUELOhewuobKyzcc+/mV1fSQkY8+c5crgca1nnArS8ja7GaduDWCGuSvMiURFUtf/EAZYtg==}
+  '@oven/bun-darwin-aarch64@1.1.31':
+    resolution: {integrity: sha512-9qwhVRMYJsczZOqR/m5Miu7AVQ+kNV3xeNK/L+j0m7vIr2fyqBhlRieShwyzQ5GOl95QfEJ4B30OnUqqwF7Uqg==}
     cpu: [arm64]
     os: [darwin]
 
-  '@oven/bun-darwin-x64-baseline@1.1.7':
-    resolution: {integrity: sha512-oMKWmT5lqrnew/cmB+Mmuy/X7X0dBXnyJgsPp1RmV665u7UlNgRGncXhaW/EXlPJk4vaXh6UQQ8bLlg6mnQNgg==}
+  '@oven/bun-darwin-x64-baseline@1.1.31':
+    resolution: {integrity: sha512-Ub3sR5JkPS+Jc2IoIQ8E+qMyRDdrPVFSCIITCuULP4f7CL9GL8Dh9yLZZjO/evCy1vZlIo9w7V+S0puKWv2FFg==}
     cpu: [x64]
     os: [darwin]
 
-  '@oven/bun-darwin-x64@1.1.7':
-    resolution: {integrity: sha512-VL0yT0rfdxU3NHts5aGjve1ui977BDJ9xb1Obw0LALWL4EzgQbiF8q8nUE6B25LwrQLzydUNTgMY0YYVLR2UkA==}
+  '@oven/bun-darwin-x64@1.1.31':
+    resolution: {integrity: sha512-HAlTzVuD+JFg5Vw6EGNxTgMNTXtipuGZsiGdk7TMRNdkabecwHs4LoM9FwXVXCrksWp6IZ8hIsSgwLfoby/8cg==}
     cpu: [x64]
     os: [darwin]
 
-  '@oven/bun-linux-aarch64@1.1.7':
-    resolution: {integrity: sha512-/oVeD+f4S2tfIoKXVALuQv68k9O/91aMRCJ8+TlnVvZgZEpE6xdtbrSa+iP1wbAvBUy9ags0AgQOJg1QJzK/ow==}
+  '@oven/bun-linux-aarch64@1.1.31':
+    resolution: {integrity: sha512-zovsX7G8D3G73Py6oVxJHjVzjob8W5vZc+0I6D5bX6Y9B5rOAGR2O2DrmFE1wRMK/XVnsaZaxNPdzsrFslKCJg==}
     cpu: [arm64]
     os: [linux]
 
-  '@oven/bun-linux-x64-baseline@1.1.7':
-    resolution: {integrity: sha512-JklT4tgXi83nDyPLcWEfHxLKQnJdtpHG9sSOxpke6TlBwnj84lXbZ+CWhQL/aL9ye1lCTUjEIEbbZph8IhWlWg==}
+  '@oven/bun-linux-x64-baseline@1.1.31':
+    resolution: {integrity: sha512-EFdgHhxC0yiDl4ndwyZ3o41YvPCC4pLA6i2It1Se1irzuIhf6CopQ5UmlvwIDWMuGmnxjyhnzzKmJg8LUcFHow==}
     cpu: [x64]
     os: [linux]
 
-  '@oven/bun-linux-x64@1.1.7':
-    resolution: {integrity: sha512-b+yTqZREacwPXcsg6/ps+qAZ/rlyuRztzptX6oNnc42+xd7BpdvKpdu2p8hbN0IoKBMqlAqFedffxFimIOMWFA==}
+  '@oven/bun-linux-x64@1.1.31':
+    resolution: {integrity: sha512-XsJpDE/j5mJraI04G5b/cOOOTk/q9OJpFchZa2YHYMHcuEoFHkvPYc2M4+XMd5eKxRo1sXXerf6ManEkjOJYNA==}
     cpu: [x64]
     os: [linux]
 
-  '@oven/bun-windows-x64-baseline@1.1.7':
-    resolution: {integrity: sha512-DkclScCfTR8YsNMATn2WVqbIf8cyD/UhIdFa4/R0Qsf+C1BB9jPquXoogSrAUJJyPMSbkBf2KshlROiFjYrjkw==}
+  '@oven/bun-windows-x64-baseline@1.1.31':
+    resolution: {integrity: sha512-k2syX3WnEEbpzFzwBiy4HGyU6SL0toepRvqyelKEOgtu5Y0E7ELeqWS+dUb75HBh8cS/SV/Ge8C177XMGzuY1g==}
     cpu: [x64]
     os: [win32]
 
-  '@oven/bun-windows-x64@1.1.7':
-    resolution: {integrity: sha512-y8qrlwv09UIYKEm9+X1KzHHtaudWWWn7GGwSqCT6c7XYfR70fbnriyCm2i0qUAUTmgtuhY7dwFtAKf1UkQJ2SQ==}
+  '@oven/bun-windows-x64@1.1.31':
+    resolution: {integrity: sha512-2l2MQ7npabIbLz428DtECHzKCEgzd7M1ABpf9zS3F+mt3gllYj0A0oxBDND9oXNpLxb7ZQVtheBalQ5CW194cw==}
     cpu: [x64]
     os: [win32]
 
@@ -2845,22 +2849,22 @@ packages:
   '@tootallnate/quickjs-emscripten@0.23.0':
     resolution: {integrity: sha512-C5Mc6rdnsaJDjO3UpGW/CQTHtCKaYlScZTly4JIu97Jxo/odCiH0ITnDXSJPTOrEKk/ycSZ0AOgTmkDtkOsvIA==}
 
-  '@trpc/client@11.0.0-rc.366':
-    resolution: {integrity: sha512-bIbcF/UhCifU5i9hbbaMlmOS2NgnRq5W0pJH2SJhrp6jyIIaCF+uNAIZtkfO0GriBb0agBmGIXqvGLFEexiTKA==}
+  '@trpc/client@11.0.0-rc.586':
+    resolution: {integrity: sha512-shCIpBzT+SzEbVXbCdpbSrPogG4c9J6hXh+xh5pidY1MTYcBHkeZVBLjy/fVSX+fB9wRoZXNaaoXO+ijYAZBcQ==}
     peerDependencies:
-      '@trpc/server': 11.0.0-rc.366+237dbb3f9
+      '@trpc/server': 11.0.0-rc.586+3388c9691
 
-  '@trpc/react-query@11.0.0-rc.366':
-    resolution: {integrity: sha512-LCdJFymEdaKBBNRQPVAcEw9qNu3m+n9hH3qIPKDanLWYlo4h+8lQnj8JIhYpClD2G3gkvD0ZSZ+F54QvwrI3nA==}
+  '@trpc/react-query@11.0.0-rc.586':
+    resolution: {integrity: sha512-fYIo9Y9lM2tqTBY9NBT5ZPX4R++SaauOl6qjvnSwmIBupboiueLMMWfMh+cmJiAVim1Hg0OvgoS6WRFIYMlFYg==}
     peerDependencies:
-      '@tanstack/react-query': ^5.25.0
-      '@trpc/client': 11.0.0-rc.366+237dbb3f9
-      '@trpc/server': 11.0.0-rc.366+237dbb3f9
+      '@tanstack/react-query': ^5.59.15
+      '@trpc/client': 11.0.0-rc.586+3388c9691
+      '@trpc/server': 11.0.0-rc.586+3388c9691
       react: '>=18.2.0'
       react-dom: '>=18.2.0'
 
-  '@trpc/server@11.0.0-rc.366':
-    resolution: {integrity: sha512-Pr7SdpIVrOGtIGt9vs7i3v0hqzlpXbi8/8RV7XfrXVJ5hlzKYOz5VE0AjckhHXuhrUlpTGTDm0/2nz0ywLcQ2g==}
+  '@trpc/server@11.0.0-rc.586':
+    resolution: {integrity: sha512-G0713HRFYyBLjN58DYq88hTH4kfKNZt9GXR0/TkVD7rENpOUBk6LKorqSDQ0y0/8aqu11HdDHsn6vBTWK3D44Q==}
 
   '@ts-morph/common@0.11.1':
     resolution: {integrity: sha512-7hWZS0NRpEsNV8vWJzg7FEz6V8MaLNeJOmwmghqUXTpzk16V1LLZhdo+4QvE/+zv4cVci0OviuJFnqhEfoV3+g==}
@@ -2906,8 +2910,8 @@ packages:
   '@types/body-parser@1.19.5':
     resolution: {integrity: sha512-fB3Zu92ucau0iQ0JMCFQE7b/dv8Ot07NI3KaZIkIUNXq82k4eBAqUaneXfleGY9JWskeS9y+u0nXMyspcuQrCg==}
 
-  '@types/bun@1.1.1':
-    resolution: {integrity: sha512-lUe9rLMhgDCViciZtgDj5CMl2u7uTq/IP149kSZH/Si6FWkCioximABFf+baRQgbm8QlH4bzT0qJRteQFNqeGA==}
+  '@types/bun@1.1.11':
+    resolution: {integrity: sha512-0N7D/H/8sbf9JMkaG5F3+I/cB4TlhKTkO9EskEWP8XDr8aVcDe4EywSnU4cnyZy6tar1dq70NeFNkqMEUigthw==}
 
   '@types/connect@3.4.38':
     resolution: {integrity: sha512-K6uROf1LD88uDQqJCktA4yzL1YYAK6NgfsI0v/mTgyPKWsX1CnJ0XPSDhViejru1GcRkLWb8RlzFYJRqGUbaug==}
@@ -2990,8 +2994,8 @@ packages:
   '@types/node@18.19.31':
     resolution: {integrity: sha512-ArgCD39YpyyrtFKIqMDvjz79jto5fcI/SVUs2HwB+f0dAzq68yqOdyaSivLiLugSziTpNXLQrVb7RZFmdZzbhA==}
 
-  '@types/node@20.11.24':
-    resolution: {integrity: sha512-Kza43ewS3xoLgCEpQrsT+xRo/EJej1y0kVYGiLFE1NEODXGzTfwiC6tXTLMQskn1X4/Rjlh0MQUvx9W+L9long==}
+  '@types/node@20.12.14':
+    resolution: {integrity: sha512-scnD59RpYD91xngrQQLGkE+6UrHUPzeKZWhhjBSa3HSkwjbQc38+q3RoIVEwxQGRw3M+j5hpNAM+lgV3cVormg==}
 
   '@types/node@20.12.7':
     resolution: {integrity: sha512-wq0cICSkRLVaf3UGLMGItu/PtdY7oaXaI/RVU+xliKVOtRna3PRY57ZDfztpDL0n11vfymMUnXv8QwYCO7L1wg==}
@@ -3371,6 +3375,7 @@ packages:
   are-we-there-yet@2.0.0:
     resolution: {integrity: sha512-Ci/qENmwHnsYo9xKIcUJN5LeDKdJ6R1Z1j9V/J5wyq8nh/mYPEpIKJbBZXtZjG04HiK7zV/p6Vs9952MrMeUIw==}
     engines: {node: '>=10'}
+    deprecated: This package is no longer supported.
 
   arg@4.1.0:
     resolution: {integrity: sha512-ZWc51jO3qegGkVh8Hwpv636EkbesNV5ZNQPCtRa+0qytRYPEs9IYT9qITY9buezqUH5uqyzlWLcufrzU2rffdg==}
@@ -3583,11 +3588,11 @@ packages:
   builtins@5.1.0:
     resolution: {integrity: sha512-SW9lzGTLvWTP1AY8xeAMZimqDrIaSdLQUcVr9DMef51niJ022Ri87SwRRKYm4A6iHfkPaiVUu/Duw2Wc4J7kKg==}
 
-  bun-types@1.1.6:
-    resolution: {integrity: sha512-LK2aaJdBBTUkDyN+kRiJHLF3VGrAcdkEHrbBvbmTkccShPw6ZalxxKjWSBJwn4UkikhZdrdA87bZWmfUgkRUYg==}
+  bun-types@1.1.30:
+    resolution: {integrity: sha512-mGh7NLisOXskBU62DxLS+/nwmLlCYHYAkCzdo4DZ9+fzrpP41hAdOqaN4DO6tQfenHb4pYb0/shw29k4/6I2yQ==}
 
-  bun@1.1.7:
-    resolution: {integrity: sha512-4Q/ySjXfSTOsehxektQuo376FfI/QMPSjnsBAwQAZsRFW37Hb8IdctOABDEBQcrYmiwgDGKlgdWTQ8/5H0N2ww==}
+  bun@1.1.31:
+    resolution: {integrity: sha512-fUUKI4qergVXDn7Ng/porWyu3SDi/iovtX0NtGIhb3MHDtN9yy6PDZfylPGlYgRn0pVHW293GJm+a0sWvJy9FA==}
     cpu: [arm64, x64]
     os: [darwin, linux, win32]
     hasBin: true
@@ -4767,6 +4772,7 @@ packages:
   eslint@8.57.0:
     resolution: {integrity: sha512-dZ6+mexnaTIbSBZWgou51U6OmzIhYM2VcNdtiTtI7qPNZm35Akpr0f6vtw3w1Kmn5PYo+tZVfh13WrhpS6oLqQ==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
     hasBin: true
 
   esniff@2.0.1:
@@ -4993,7 +4999,6 @@ packages:
     resolution: {integrity: sha512-Auw9a4AxqWpa9GUfj370BMPzzyncfBABW8Mab7BGWBYDj4Isgq+cDKtx0i6u9jcX9pQDnswsaaOTgTmA5pEjuQ==}
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
     os: [darwin]
-    deprecated: '"Please update to latest v2.3 or v2.2"'
 
   fsevents@2.3.3:
     resolution: {integrity: sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==}
@@ -5013,6 +5018,7 @@ packages:
   gauge@3.0.2:
     resolution: {integrity: sha512-+5J6MS/5XksCuXq++uFRsnUd7Ovu1XenbeuIuNRJxYWjgQbPuFhT14lAvsWfqfAmnwluf1OwMjz39HjfLPci0Q==}
     engines: {node: '>=10'}
+    deprecated: This package is no longer supported.
 
   generic-pool@3.4.2:
     resolution: {integrity: sha512-H7cUpwCQSiJmAHM4c/aFu6fUfrhWXW1ncyh8ftxEPMu6AiYkHw9K8br720TGPZJbk5eOH2bynjZD1yPvdDAmag==}
@@ -5105,10 +5111,12 @@ packages:
 
   glob@7.2.3:
     resolution: {integrity: sha512-nFR0zLpU2YCaRxwoCJvL6UvCH2JFyFVIvwTLsIf21AuHlMskA1hhTdk+LlYJtOlYt9v6dvszD2BGRqBL+iQK9Q==}
+    deprecated: Glob versions prior to v9 are no longer supported
 
   glob@8.1.0:
     resolution: {integrity: sha512-r8hpEjiQEYlF2QU0df3dS+nxxSIreXQS1qRhMJM0Q5NDdR386C7jb7Hwwod8Fgiuex+k0GFjgft18yvxm5XoCQ==}
     engines: {node: '>=12'}
+    deprecated: Glob versions prior to v9 are no longer supported
 
   globals@11.12.0:
     resolution: {integrity: sha512-WOBp/EEGUiIsJSp7wcv/y6MO+lV9UoncWqxuFfm8eBwzWNgyfBd6Gz+IeKQ9jCmyhoH99g15M3T+QaVHFjizVA==}
@@ -5275,6 +5283,7 @@ packages:
 
   inflight@1.0.6:
     resolution: {integrity: sha512-k92I/b08q4wvFscXCLvqfsHCrjrF7yiXsQuIVvVE7N82W3+aqpzuUdBbfhWcy/FZR3/4IgflMgKLOsvPDrGCJA==}
+    deprecated: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
 
   inherits@2.0.1:
     resolution: {integrity: sha512-8nWq2nLTAwd02jTqJExUYFSD/fKq6VH9Y/oG2accc/kdI0V98Bag8d5a4gi3XHz73rDWa2PvTtvcWYquKqSENA==}
@@ -6055,6 +6064,7 @@ packages:
 
   npmlog@5.0.1:
     resolution: {integrity: sha512-AqZtDUWOMKs1G/8lwylVjrdYgqA4d9nu8hc+0gzRxlDb1I10+FHBGMXs6aiQHFdCUUlqH99MUMuLfzWDNDtfxw==}
+    deprecated: This package is no longer supported.
 
   nypm@0.3.8:
     resolution: {integrity: sha512-IGWlC6So2xv6V4cIDmoV0SwwWx7zLG086gyqkyumteH2fIgCAM4nDVFB2iDRszDvmdSVW9xb1N+2KjQ6C7d4og==}
@@ -6764,10 +6774,12 @@ packages:
 
   rimraf@2.6.3:
     resolution: {integrity: sha512-mwqeW5XsA2qAejG46gYdENaxXjx9onRNCfn7L0duuP4hCuTIi/QO7PDK07KJfp1d+izWPrzEJDcSqBa0OZQriA==}
+    deprecated: Rimraf versions prior to v4 are no longer supported
     hasBin: true
 
   rimraf@3.0.2:
     resolution: {integrity: sha512-JZkJMZkAGFFPP2YqXZXPbMlMBgsxzE8ILs4lMIX/2o0L9UBw9O/Y3o6wFw/i9YLapcUJWwqbi3kdxIPdC62TIA==}
+    deprecated: Rimraf versions prior to v4 are no longer supported
     hasBin: true
 
   rollup-plugin-inject@3.0.2:
@@ -9318,28 +9330,28 @@ snapshots:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.17.1
 
-  '@oven/bun-darwin-aarch64@1.1.7':
+  '@oven/bun-darwin-aarch64@1.1.31':
     optional: true
 
-  '@oven/bun-darwin-x64-baseline@1.1.7':
+  '@oven/bun-darwin-x64-baseline@1.1.31':
     optional: true
 
-  '@oven/bun-darwin-x64@1.1.7':
+  '@oven/bun-darwin-x64@1.1.31':
     optional: true
 
-  '@oven/bun-linux-aarch64@1.1.7':
+  '@oven/bun-linux-aarch64@1.1.31':
     optional: true
 
-  '@oven/bun-linux-x64-baseline@1.1.7':
+  '@oven/bun-linux-x64-baseline@1.1.31':
     optional: true
 
-  '@oven/bun-linux-x64@1.1.7':
+  '@oven/bun-linux-x64@1.1.31':
     optional: true
 
-  '@oven/bun-windows-x64-baseline@1.1.7':
+  '@oven/bun-windows-x64-baseline@1.1.31':
     optional: true
 
-  '@oven/bun-windows-x64@1.1.7':
+  '@oven/bun-windows-x64@1.1.31':
     optional: true
 
   '@pkgjs/parseargs@0.11.0':
@@ -9865,11 +9877,11 @@ snapshots:
     dependencies:
       '@storybook/global': 5.0.0
 
-  '@storybook/addon-interactions@8.0.10(@types/bun@1.1.1)':
+  '@storybook/addon-interactions@8.0.10(@types/bun@1.1.11)':
     dependencies:
       '@storybook/global': 5.0.0
       '@storybook/instrumenter': 8.0.10
-      '@storybook/test': 8.0.10(@types/bun@1.1.1)
+      '@storybook/test': 8.0.10(@types/bun@1.1.11)
       '@storybook/types': 8.0.10
       polished: 4.3.1
       ts-dedent: 2.2.0
@@ -10361,14 +10373,14 @@ snapshots:
       - encoding
       - supports-color
 
-  '@storybook/test@8.0.10(@types/bun@1.1.1)':
+  '@storybook/test@8.0.10(@types/bun@1.1.11)':
     dependencies:
       '@storybook/client-logger': 8.0.10
       '@storybook/core-events': 8.0.10
       '@storybook/instrumenter': 8.0.10
       '@storybook/preview-api': 8.0.10
       '@testing-library/dom': 9.3.4
-      '@testing-library/jest-dom': 6.4.2(@types/bun@1.1.1)
+      '@testing-library/jest-dom': 6.4.2(@types/bun@1.1.11)
       '@testing-library/user-event': 14.5.2(@testing-library/dom@9.3.4)
       '@vitest/expect': 1.3.1
       '@vitest/spy': 1.5.2
@@ -10434,7 +10446,7 @@ snapshots:
       lz-string: 1.5.0
       pretty-format: 27.5.1
 
-  '@testing-library/jest-dom@6.4.2(@types/bun@1.1.1)':
+  '@testing-library/jest-dom@6.4.2(@types/bun@1.1.11)':
     dependencies:
       '@adobe/css-tools': 4.3.3
       '@babel/runtime': 7.24.5
@@ -10445,7 +10457,7 @@ snapshots:
       lodash: 4.17.21
       redent: 3.0.0
     optionalDependencies:
-      '@types/bun': 1.1.1
+      '@types/bun': 1.1.11
 
   '@testing-library/user-event@14.5.2(@testing-library/dom@9.3.4)':
     dependencies:
@@ -10455,19 +10467,19 @@ snapshots:
 
   '@tootallnate/quickjs-emscripten@0.23.0': {}
 
-  '@trpc/client@11.0.0-rc.366(@trpc/server@11.0.0-rc.366)':
+  '@trpc/client@11.0.0-rc.586(@trpc/server@11.0.0-rc.586)':
     dependencies:
-      '@trpc/server': 11.0.0-rc.366
+      '@trpc/server': 11.0.0-rc.586
 
-  '@trpc/react-query@11.0.0-rc.366(@tanstack/react-query@5.35.1(react@18.3.1))(@trpc/client@11.0.0-rc.366(@trpc/server@11.0.0-rc.366))(@trpc/server@11.0.0-rc.366)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@trpc/react-query@11.0.0-rc.586(@tanstack/react-query@5.35.1(react@18.3.1))(@trpc/client@11.0.0-rc.586(@trpc/server@11.0.0-rc.586))(@trpc/server@11.0.0-rc.586)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@tanstack/react-query': 5.35.1(react@18.3.1)
-      '@trpc/client': 11.0.0-rc.366(@trpc/server@11.0.0-rc.366)
-      '@trpc/server': 11.0.0-rc.366
+      '@trpc/client': 11.0.0-rc.586(@trpc/server@11.0.0-rc.586)
+      '@trpc/server': 11.0.0-rc.586
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  '@trpc/server@11.0.0-rc.366': {}
+  '@trpc/server@11.0.0-rc.586': {}
 
   '@ts-morph/common@0.11.1':
     dependencies:
@@ -10552,9 +10564,9 @@ snapshots:
       '@types/connect': 3.4.38
       '@types/node': 20.12.7
 
-  '@types/bun@1.1.1':
+  '@types/bun@1.1.11':
     dependencies:
-      bun-types: 1.1.6
+      bun-types: 1.1.30
 
   '@types/connect@3.4.38':
     dependencies:
@@ -10639,7 +10651,7 @@ snapshots:
     dependencies:
       undici-types: 5.26.5
 
-  '@types/node@20.11.24':
+  '@types/node@20.12.14':
     dependencies:
       undici-types: 5.26.5
 
@@ -11448,21 +11460,21 @@ snapshots:
     dependencies:
       semver: 7.6.0
 
-  bun-types@1.1.6:
+  bun-types@1.1.30:
     dependencies:
-      '@types/node': 20.11.24
+      '@types/node': 20.12.14
       '@types/ws': 8.5.10
 
-  bun@1.1.7:
+  bun@1.1.31:
     optionalDependencies:
-      '@oven/bun-darwin-aarch64': 1.1.7
-      '@oven/bun-darwin-x64': 1.1.7
-      '@oven/bun-darwin-x64-baseline': 1.1.7
-      '@oven/bun-linux-aarch64': 1.1.7
-      '@oven/bun-linux-x64': 1.1.7
-      '@oven/bun-linux-x64-baseline': 1.1.7
-      '@oven/bun-windows-x64': 1.1.7
-      '@oven/bun-windows-x64-baseline': 1.1.7
+      '@oven/bun-darwin-aarch64': 1.1.31
+      '@oven/bun-darwin-x64': 1.1.31
+      '@oven/bun-darwin-x64-baseline': 1.1.31
+      '@oven/bun-linux-aarch64': 1.1.31
+      '@oven/bun-linux-x64': 1.1.31
+      '@oven/bun-linux-x64-baseline': 1.1.31
+      '@oven/bun-windows-x64': 1.1.31
+      '@oven/bun-windows-x64-baseline': 1.1.31
 
   busboy@1.6.0:
     dependencies:
@@ -11976,12 +11988,12 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  drizzle-orm@0.30.10(@cloudflare/workers-types@4.20240502.0)(@libsql/client@0.6.0)(@types/react@18.3.1)(bun-types@1.1.6)(react@18.3.1):
+  drizzle-orm@0.30.10(@cloudflare/workers-types@4.20240502.0)(@libsql/client@0.6.0)(@types/react@18.3.1)(bun-types@1.1.30)(react@18.3.1):
     optionalDependencies:
       '@cloudflare/workers-types': 4.20240502.0
       '@libsql/client': 0.6.0
       '@types/react': 18.3.1
-      bun-types: 1.1.6
+      bun-types: 1.1.30
       react: 18.3.1
 
   duplexify@3.7.1:
