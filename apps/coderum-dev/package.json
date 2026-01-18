@@ -35,7 +35,7 @@
 	},
 	"devDependencies": {
 		"@cloudflare/next-on-pages": "1.11.2",
-		"@cloudflare/workers-types": "4.20240502.0",
+		"@cloudflare/workers-types": "4.20260118.0",
 		"@repo/eslint-config": "workspace:*",
 		"@repo/typescript-config": "workspace:*",
 		"@types/eslint": "8.56.10",
