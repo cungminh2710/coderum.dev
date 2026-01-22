@@ -17,7 +17,7 @@
 		"prettier": "3.2.5",
 		"prettier-plugin-tailwindcss": "0.5.14",
 		"turbo": "1.13.3",
-		"wrangler": "3.55.0",
+		"wrangler": "3.114.17",
 		"yargs": "17.7.2"
 	},
 	"packageManager": "pnpm@9.1.1",
