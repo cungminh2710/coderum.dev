@@ -15,8 +15,8 @@ importers:
         specifier: workspace:*
         version: link:packages/typescript-config
       '@types/bun':
-        specifier: 1.1.1
-        version: 1.1.1
+        specifier: 1.3.7
+        version: 1.3.7
       '@types/yargs':
         specifier: 17.0.32
         version: 17.0.32
@@ -70,7 +70,7 @@ importers:
         version: 11.0.0(typescript@5.4.5)
       drizzle-orm:
         specifier: 0.30.10
-        version: 0.30.10(@cloudflare/workers-types@4.20260118.0)(@libsql/client@0.6.0)(@types/react@18.3.1)(bun-types@1.1.6)(react@18.3.1)
+        version: 0.30.10(@cloudflare/workers-types@4.20260118.0)(@libsql/client@0.6.0)(@types/react@18.3.1)(bun-types@1.3.7)(react@18.3.1)
       lucia:
         specifier: 3.2.0
         version: 3.2.0
@@ -257,7 +257,7 @@ importers:
         version: 8.0.10(@types/react@18.3.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@storybook/addon-interactions':
         specifier: 8.0.10
-        version: 8.0.10(@types/bun@1.1.1)
+        version: 8.0.10(@types/bun@1.3.7)
       '@storybook/addon-links':
         specifier: 8.0.10
         version: 8.0.10(react@18.3.1)
@@ -278,7 +278,7 @@ importers:
         version: 8.0.10(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rollup@4.17.1)(typescript@5.4.5)(vite@5.2.10(@types/node@20.12.7))
       '@storybook/test':
         specifier: 8.0.10
-        version: 8.0.10(@types/bun@1.1.1)
+        version: 8.0.10(@types/bun@1.3.7)
       '@turbo/gen':
         specifier: 1.13.3
         version: 1.13.3(@types/node@20.12.7)(typescript@5.4.5)
@@ -2916,8 +2916,8 @@ packages:
   '@types/body-parser@1.19.5':
     resolution: {integrity: sha512-fB3Zu92ucau0iQ0JMCFQE7b/dv8Ot07NI3KaZIkIUNXq82k4eBAqUaneXfleGY9JWskeS9y+u0nXMyspcuQrCg==}
 
-  '@types/bun@1.1.1':
-    resolution: {integrity: sha512-lUe9rLMhgDCViciZtgDj5CMl2u7uTq/IP149kSZH/Si6FWkCioximABFf+baRQgbm8QlH4bzT0qJRteQFNqeGA==}
+  '@types/bun@1.3.7':
+    resolution: {integrity: sha512-lmNuMda+Z9b7tmhA0tohwy8ZWFSnmQm1UDWXtH5r9F7wZCfkeO3Jx7wKQ1EOiKq43yHts7ky6r8SDJQWRNupkA==}
 
   '@types/connect@3.4.38':
     resolution: {integrity: sha512-K6uROf1LD88uDQqJCktA4yzL1YYAK6NgfsI0v/mTgyPKWsX1CnJ0XPSDhViejru1GcRkLWb8RlzFYJRqGUbaug==}
@@ -2999,9 +2999,6 @@ packages:
 
   '@types/node@18.19.31':
     resolution: {integrity: sha512-ArgCD39YpyyrtFKIqMDvjz79jto5fcI/SVUs2HwB+f0dAzq68yqOdyaSivLiLugSziTpNXLQrVb7RZFmdZzbhA==}
-
-  '@types/node@20.11.24':
-    resolution: {integrity: sha512-Kza43ewS3xoLgCEpQrsT+xRo/EJej1y0kVYGiLFE1NEODXGzTfwiC6tXTLMQskn1X4/Rjlh0MQUvx9W+L9long==}
 
   '@types/node@20.12.7':
     resolution: {integrity: sha512-wq0cICSkRLVaf3UGLMGItu/PtdY7oaXaI/RVU+xliKVOtRna3PRY57ZDfztpDL0n11vfymMUnXv8QwYCO7L1wg==}
@@ -3594,8 +3591,8 @@ packages:
   builtins@5.1.0:
     resolution: {integrity: sha512-SW9lzGTLvWTP1AY8xeAMZimqDrIaSdLQUcVr9DMef51niJ022Ri87SwRRKYm4A6iHfkPaiVUu/Duw2Wc4J7kKg==}
 
-  bun-types@1.1.6:
-    resolution: {integrity: sha512-LK2aaJdBBTUkDyN+kRiJHLF3VGrAcdkEHrbBvbmTkccShPw6ZalxxKjWSBJwn4UkikhZdrdA87bZWmfUgkRUYg==}
+  bun-types@1.3.7:
+    resolution: {integrity: sha512-qyschsA03Qz+gou+apt6HNl6HnI+sJJLL4wLDke4iugsE6584CMupOtTY1n+2YC9nGVrEKUlTs99jjRLKgWnjQ==}
 
   bun@1.1.7:
     resolution: {integrity: sha512-4Q/ySjXfSTOsehxektQuo376FfI/QMPSjnsBAwQAZsRFW37Hb8IdctOABDEBQcrYmiwgDGKlgdWTQ8/5H0N2ww==}
@@ -7183,10 +7180,12 @@ packages:
   tar@4.4.18:
     resolution: {integrity: sha512-ZuOtqqmkV9RE1+4odd+MhBpibmCxNP6PJhH/h2OqNuotTX7/XHPZQJv2pKvWMplFH9SIZZhitehh6vBH6LO8Pg==}
     engines: {node: '>=4.5'}
+    deprecated: Old versions of tar are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exhorbitant rates) by contacting i@izs.me
 
   tar@6.2.1:
     resolution: {integrity: sha512-DZ4yORTwrbTj/7MZYq2w+/ZFdI6OZ/f9SFHR+71gIVUZhOQPHzVCLpvRnPgyaMpfWxxk/4ONva3GQSyNIKRv6A==}
     engines: {node: '>=10'}
+    deprecated: Old versions of tar are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exhorbitant rates) by contacting i@izs.me
 
   telejson@7.2.0:
     resolution: {integrity: sha512-1QTEcJkJEhc8OnStBx/ILRu5J2p0GjvWsBx56bmZRqnrkdBMUe+nX92jxV+p3dB4CP6PZCdJMQJwCggkNBMzkQ==}
@@ -9889,11 +9888,11 @@ snapshots:
     dependencies:
       '@storybook/global': 5.0.0
 
-  '@storybook/addon-interactions@8.0.10(@types/bun@1.1.1)':
+  '@storybook/addon-interactions@8.0.10(@types/bun@1.3.7)':
     dependencies:
       '@storybook/global': 5.0.0
       '@storybook/instrumenter': 8.0.10
-      '@storybook/test': 8.0.10(@types/bun@1.1.1)
+      '@storybook/test': 8.0.10(@types/bun@1.3.7)
       '@storybook/types': 8.0.10
       polished: 4.3.1
       ts-dedent: 2.2.0
@@ -10385,14 +10384,14 @@ snapshots:
       - encoding
       - supports-color
 
-  '@storybook/test@8.0.10(@types/bun@1.1.1)':
+  '@storybook/test@8.0.10(@types/bun@1.3.7)':
     dependencies:
       '@storybook/client-logger': 8.0.10
       '@storybook/core-events': 8.0.10
       '@storybook/instrumenter': 8.0.10
       '@storybook/preview-api': 8.0.10
       '@testing-library/dom': 9.3.4
-      '@testing-library/jest-dom': 6.4.2(@types/bun@1.1.1)
+      '@testing-library/jest-dom': 6.4.2(@types/bun@1.3.7)
       '@testing-library/user-event': 14.5.2(@testing-library/dom@9.3.4)
       '@vitest/expect': 1.3.1
       '@vitest/spy': 1.5.2
@@ -10458,7 +10457,7 @@ snapshots:
       lz-string: 1.5.0
       pretty-format: 27.5.1
 
-  '@testing-library/jest-dom@6.4.2(@types/bun@1.1.1)':
+  '@testing-library/jest-dom@6.4.2(@types/bun@1.3.7)':
     dependencies:
       '@adobe/css-tools': 4.3.3
       '@babel/runtime': 7.24.5
@@ -10469,7 +10468,7 @@ snapshots:
       lodash: 4.17.21
       redent: 3.0.0
     optionalDependencies:
-      '@types/bun': 1.1.1
+      '@types/bun': 1.3.7
 
   '@testing-library/user-event@14.5.2(@testing-library/dom@9.3.4)':
     dependencies:
@@ -10580,9 +10579,9 @@ snapshots:
       '@types/connect': 3.4.38
       '@types/node': 20.12.7
 
-  '@types/bun@1.1.1':
+  '@types/bun@1.3.7':
     dependencies:
-      bun-types: 1.1.6
+      bun-types: 1.3.7
 
   '@types/connect@3.4.38':
     dependencies:
@@ -10664,10 +10663,6 @@ snapshots:
   '@types/node@14.18.33': {}
 
   '@types/node@18.19.31':
-    dependencies:
-      undici-types: 5.26.5
-
-  '@types/node@20.11.24':
     dependencies:
       undici-types: 5.26.5
 
@@ -11476,10 +11471,9 @@ snapshots:
     dependencies:
       semver: 7.6.0
 
-  bun-types@1.1.6:
+  bun-types@1.3.7:
     dependencies:
-      '@types/node': 20.11.24
-      '@types/ws': 8.5.10
+      '@types/node': 20.12.7
 
   bun@1.1.7:
     optionalDependencies:
@@ -12004,12 +11998,12 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  drizzle-orm@0.30.10(@cloudflare/workers-types@4.20260118.0)(@libsql/client@0.6.0)(@types/react@18.3.1)(bun-types@1.1.6)(react@18.3.1):
+  drizzle-orm@0.30.10(@cloudflare/workers-types@4.20260118.0)(@libsql/client@0.6.0)(@types/react@18.3.1)(bun-types@1.3.7)(react@18.3.1):
     optionalDependencies:
       '@cloudflare/workers-types': 4.20260118.0
       '@libsql/client': 0.6.0
       '@types/react': 18.3.1
-      bun-types: 1.1.6
+      bun-types: 1.3.7
       react: 18.3.1
 
   duplexify@3.7.1:
