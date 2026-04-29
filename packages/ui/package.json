@@ -23,7 +23,7 @@
 		"@storybook/react-vite": "8.0.10",
 		"@storybook/test": "8.0.10",
 		"@turbo/gen": "1.13.3",
-		"@types/eslint": "8.56.10",
+		"@types/eslint": "8.56.12",
 		"@types/node": "20.12.07",
 		"@types/react": "18.3.1",
 		"@types/react-dom": "18.3.0",
