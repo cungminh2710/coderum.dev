@@ -15,8 +15,8 @@ importers:
         specifier: workspace:*
         version: link:packages/typescript-config
       '@types/bun':
-        specifier: 1.1.1
-        version: 1.1.1
+        specifier: 1.3.13
+        version: 1.3.13
       '@types/yargs':
         specifier: 17.0.32
         version: 17.0.32
@@ -61,16 +61,16 @@ importers:
         version: 5.35.1(react@18.3.1)
       '@trpc/client':
         specifier: next
-        version: 11.0.0(@trpc/server@11.0.0(typescript@5.4.5))(typescript@5.4.5)
+        version: 11.13.0(@trpc/server@11.13.0(typescript@5.4.5))(typescript@5.4.5)
       '@trpc/react-query':
         specifier: next
-        version: 11.0.0(@tanstack/react-query@5.35.1(react@18.3.1))(@trpc/client@11.0.0(@trpc/server@11.0.0(typescript@5.4.5))(typescript@5.4.5))(@trpc/server@11.0.0(typescript@5.4.5))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.4.5)
+        version: 11.13.0(@tanstack/react-query@5.35.1(react@18.3.1))(@trpc/client@11.13.0(@trpc/server@11.13.0(typescript@5.4.5))(typescript@5.4.5))(@trpc/server@11.13.0(typescript@5.4.5))(react@18.3.1)(typescript@5.4.5)
       '@trpc/server':
         specifier: next
-        version: 11.0.0(typescript@5.4.5)
+        version: 11.13.0(typescript@5.4.5)
       drizzle-orm:
         specifier: 0.30.10
-        version: 0.30.10(@cloudflare/workers-types@4.20260118.0)(@libsql/client@0.6.0)(@types/react@18.3.1)(bun-types@1.1.6)(react@18.3.1)
+        version: 0.30.10(@cloudflare/workers-types@4.20260118.0)(@libsql/client@0.6.0)(@types/react@18.3.1)(bun-types@1.3.13)(react@18.3.1)
       lucia:
         specifier: 3.2.0
         version: 3.2.0
@@ -257,7 +257,7 @@ importers:
         version: 8.0.10(@types/react@18.3.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@storybook/addon-interactions':
         specifier: 8.0.10
-        version: 8.0.10(@types/bun@1.1.1)
+        version: 8.0.10(@types/bun@1.3.13)
       '@storybook/addon-links':
         specifier: 8.0.10
         version: 8.0.10(react@18.3.1)
@@ -278,7 +278,7 @@ importers:
         version: 8.0.10(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rollup@4.17.1)(typescript@5.4.5)(vite@5.2.10(@types/node@20.12.7))
       '@storybook/test':
         specifier: 8.0.10
-        version: 8.0.10(@types/bun@1.1.1)
+        version: 8.0.10(@types/bun@1.3.13)
       '@turbo/gen':
         specifier: 1.13.3
         version: 1.13.3(@types/node@20.12.7)(typescript@5.4.5)
@@ -2851,24 +2851,23 @@ packages:
   '@tootallnate/quickjs-emscripten@0.23.0':
     resolution: {integrity: sha512-C5Mc6rdnsaJDjO3UpGW/CQTHtCKaYlScZTly4JIu97Jxo/odCiH0ITnDXSJPTOrEKk/ycSZ0AOgTmkDtkOsvIA==}
 
-  '@trpc/client@11.0.0':
-    resolution: {integrity: sha512-U2THlxsdr4ykAX5lpTU8k5WRADPQ+68Ex2gfUht3MlCxGK7njBmNSSzjpQSWNt7tMI/xsYrddFiRlmEPrh+Cbg==}
+  '@trpc/client@11.13.0':
+    resolution: {integrity: sha512-Tszb0RXGxZQ0OzoH4IGqai/Es1u1RNnvuCr6cbOoJUKyROlF6zeUvQlJvKeldZ+XZ+bGWCnIdfcdA6XDDDNsKQ==}
     peerDependencies:
-      '@trpc/server': 11.0.0
+      '@trpc/server': 11.13.0
       typescript: '>=5.7.2'
 
-  '@trpc/react-query@11.0.0':
-    resolution: {integrity: sha512-HeE9bBLA6nqC2xk5wlNZIPQ5vmyli3tgNNab8fTE489+ksNMKxaIx66pZKsMJIorDcP1wS0rWNV+GroU0iR98g==}
+  '@trpc/react-query@11.13.0':
+    resolution: {integrity: sha512-yF3MAWcfbCgDHXS3FO5tDrvZPK+WbafhPYccty8Bv1kHkjrYzfHAZjIWQATi8egxm6dQnZuyW24mTst5W/9N/A==}
     peerDependencies:
-      '@tanstack/react-query': ^5.67.1
-      '@trpc/client': 11.0.0
-      '@trpc/server': 11.0.0
+      '@tanstack/react-query': ^5.80.3
+      '@trpc/client': 11.13.0
+      '@trpc/server': 11.13.0
       react: '>=18.2.0'
-      react-dom: '>=18.2.0'
       typescript: '>=5.7.2'
 
-  '@trpc/server@11.0.0':
-    resolution: {integrity: sha512-xY9q/b/wR/tWGYTm5xmRjivkYD2EZZXmOKmHuNJRYZuLbieeNUsdfQRjJC409WB1pjKWInomhHwuA8bahZJ4lQ==}
+  '@trpc/server@11.13.0':
+    resolution: {integrity: sha512-Iv3tWeFdb9d1UQwCPFtOcf63mF/6HD0FRDnzLmFIKWDBfKUvHUfU3yNr2pYiGs0Ctljc991Wh8xbuyAPRkdqyA==}
     peerDependencies:
       typescript: '>=5.7.2'
 
@@ -2916,8 +2915,8 @@ packages:
   '@types/body-parser@1.19.5':
     resolution: {integrity: sha512-fB3Zu92ucau0iQ0JMCFQE7b/dv8Ot07NI3KaZIkIUNXq82k4eBAqUaneXfleGY9JWskeS9y+u0nXMyspcuQrCg==}
 
-  '@types/bun@1.1.1':
-    resolution: {integrity: sha512-lUe9rLMhgDCViciZtgDj5CMl2u7uTq/IP149kSZH/Si6FWkCioximABFf+baRQgbm8QlH4bzT0qJRteQFNqeGA==}
+  '@types/bun@1.3.13':
+    resolution: {integrity: sha512-9fqXWk5YIHGGnUau9TEi+qdlTYDAnOj+xLCmSTwXfAIqXr2x4tytJb43E9uCvt09zJURKXwAtkoH4nLQfzeTXw==}
 
   '@types/connect@3.4.38':
     resolution: {integrity: sha512-K6uROf1LD88uDQqJCktA4yzL1YYAK6NgfsI0v/mTgyPKWsX1CnJ0XPSDhViejru1GcRkLWb8RlzFYJRqGUbaug==}
@@ -2999,9 +2998,6 @@ packages:
 
   '@types/node@18.19.31':
     resolution: {integrity: sha512-ArgCD39YpyyrtFKIqMDvjz79jto5fcI/SVUs2HwB+f0dAzq68yqOdyaSivLiLugSziTpNXLQrVb7RZFmdZzbhA==}
-
-  '@types/node@20.11.24':
-    resolution: {integrity: sha512-Kza43ewS3xoLgCEpQrsT+xRo/EJej1y0kVYGiLFE1NEODXGzTfwiC6tXTLMQskn1X4/Rjlh0MQUvx9W+L9long==}
 
   '@types/node@20.12.7':
     resolution: {integrity: sha512-wq0cICSkRLVaf3UGLMGItu/PtdY7oaXaI/RVU+xliKVOtRna3PRY57ZDfztpDL0n11vfymMUnXv8QwYCO7L1wg==}
@@ -3527,6 +3523,7 @@ packages:
   basic-ftp@5.0.5:
     resolution: {integrity: sha512-4Bcg1P8xhUuqcii/S0Z9wiHIrQVPMermM1any+MX5GeGD7faD3/msQUDGLol9wOcz4/jbg/WJnGqoJF6LiBdtg==}
     engines: {node: '>=10.0.0'}
+    deprecated: Security vulnerability fixed in 5.2.1, please upgrade
 
   better-opn@3.0.2:
     resolution: {integrity: sha512-aVNobHnJqLiUelTaHat9DZ1qM2w0C0Eym4LPI/3JxOnSokGVdsl1T1kN7TFvsEAD8G47A6VKQ0TVHqbBnYMJlQ==}
@@ -3594,8 +3591,8 @@ packages:
   builtins@5.1.0:
     resolution: {integrity: sha512-SW9lzGTLvWTP1AY8xeAMZimqDrIaSdLQUcVr9DMef51niJ022Ri87SwRRKYm4A6iHfkPaiVUu/Duw2Wc4J7kKg==}
 
-  bun-types@1.1.6:
-    resolution: {integrity: sha512-LK2aaJdBBTUkDyN+kRiJHLF3VGrAcdkEHrbBvbmTkccShPw6ZalxxKjWSBJwn4UkikhZdrdA87bZWmfUgkRUYg==}
+  bun-types@1.3.13:
+    resolution: {integrity: sha512-QXKeHLlOLqQX9LgYaHJfzdBaV21T63HhFJnvuRCcjZiaUDpbs5ED1MgxbMra71CsryN/1dAoXuJJJwIv/2drVA==}
 
   bun@1.1.7:
     resolution: {integrity: sha512-4Q/ySjXfSTOsehxektQuo376FfI/QMPSjnsBAwQAZsRFW37Hb8IdctOABDEBQcrYmiwgDGKlgdWTQ8/5H0N2ww==}
@@ -5113,16 +5110,17 @@ packages:
   glob@10.3.10:
     resolution: {integrity: sha512-fa46+tv1Ak0UPK1TOy/pZrIybNNt4HCv7SDzwyfiOZkvZLEbjsZkJBPtDHVshZjbecAoAGSC20MjLDG/qr679g==}
     engines: {node: '>=16 || 14 >=14.17'}
+    deprecated: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
     hasBin: true
 
   glob@7.2.3:
     resolution: {integrity: sha512-nFR0zLpU2YCaRxwoCJvL6UvCH2JFyFVIvwTLsIf21AuHlMskA1hhTdk+LlYJtOlYt9v6dvszD2BGRqBL+iQK9Q==}
-    deprecated: Glob versions prior to v9 are no longer supported
+    deprecated: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
 
   glob@8.1.0:
     resolution: {integrity: sha512-r8hpEjiQEYlF2QU0df3dS+nxxSIreXQS1qRhMJM0Q5NDdR386C7jb7Hwwod8Fgiuex+k0GFjgft18yvxm5XoCQ==}
     engines: {node: '>=12'}
-    deprecated: Glob versions prior to v9 are no longer supported
+    deprecated: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
 
   globals@11.12.0:
     resolution: {integrity: sha512-WOBp/EEGUiIsJSp7wcv/y6MO+lV9UoncWqxuFfm8eBwzWNgyfBd6Gz+IeKQ9jCmyhoH99g15M3T+QaVHFjizVA==}
@@ -7183,10 +7181,12 @@ packages:
   tar@4.4.18:
     resolution: {integrity: sha512-ZuOtqqmkV9RE1+4odd+MhBpibmCxNP6PJhH/h2OqNuotTX7/XHPZQJv2pKvWMplFH9SIZZhitehh6vBH6LO8Pg==}
     engines: {node: '>=4.5'}
+    deprecated: Old versions of tar are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
 
   tar@6.2.1:
     resolution: {integrity: sha512-DZ4yORTwrbTj/7MZYq2w+/ZFdI6OZ/f9SFHR+71gIVUZhOQPHzVCLpvRnPgyaMpfWxxk/4ONva3GQSyNIKRv6A==}
     engines: {node: '>=10'}
+    deprecated: Old versions of tar are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
 
   telejson@7.2.0:
     resolution: {integrity: sha512-1QTEcJkJEhc8OnStBx/ILRu5J2p0GjvWsBx56bmZRqnrkdBMUe+nX92jxV+p3dB4CP6PZCdJMQJwCggkNBMzkQ==}
@@ -7564,11 +7564,12 @@ packages:
 
   uuid@3.3.2:
     resolution: {integrity: sha512-yXJmeNaw3DnnKAOKJE51sL/ZaYfWJRl1pK9dr19YFCu0ObS231AB1/LbqTKRAQ5kw8A90rA6fr4riOUpTZvQZA==}
-    deprecated: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+    deprecated: uuid@10 and below is no longer supported.  For ESM codebases, update to uuid@latest.  For CommonJS codebases, use uuid@11 (but be aware this version will likely be deprecated in 2028).
     hasBin: true
 
   uuid@9.0.1:
     resolution: {integrity: sha512-b+1eJOlsR9K8HJpow9Ok3fiWOWSIcIzXodvv0rQjVoOVNpWMpxf1wZNpt4y9h10odCNrqnYp1OBzRktckBe3sA==}
+    deprecated: uuid@10 and below is no longer supported.  For ESM codebases, update to uuid@latest.  For CommonJS codebases, use uuid@11 (but be aware this version will likely be deprecated in 2028).
     hasBin: true
 
   v8-compile-cache-lib@3.0.1:
@@ -9889,11 +9890,11 @@ snapshots:
     dependencies:
       '@storybook/global': 5.0.0
 
-  '@storybook/addon-interactions@8.0.10(@types/bun@1.1.1)':
+  '@storybook/addon-interactions@8.0.10(@types/bun@1.3.13)':
     dependencies:
       '@storybook/global': 5.0.0
       '@storybook/instrumenter': 8.0.10
-      '@storybook/test': 8.0.10(@types/bun@1.1.1)
+      '@storybook/test': 8.0.10(@types/bun@1.3.13)
       '@storybook/types': 8.0.10
       polished: 4.3.1
       ts-dedent: 2.2.0
@@ -10385,14 +10386,14 @@ snapshots:
       - encoding
       - supports-color
 
-  '@storybook/test@8.0.10(@types/bun@1.1.1)':
+  '@storybook/test@8.0.10(@types/bun@1.3.13)':
     dependencies:
       '@storybook/client-logger': 8.0.10
       '@storybook/core-events': 8.0.10
       '@storybook/instrumenter': 8.0.10
       '@storybook/preview-api': 8.0.10
       '@testing-library/dom': 9.3.4
-      '@testing-library/jest-dom': 6.4.2(@types/bun@1.1.1)
+      '@testing-library/jest-dom': 6.4.2(@types/bun@1.3.13)
       '@testing-library/user-event': 14.5.2(@testing-library/dom@9.3.4)
       '@vitest/expect': 1.3.1
       '@vitest/spy': 1.5.2
@@ -10458,7 +10459,7 @@ snapshots:
       lz-string: 1.5.0
       pretty-format: 27.5.1
 
-  '@testing-library/jest-dom@6.4.2(@types/bun@1.1.1)':
+  '@testing-library/jest-dom@6.4.2(@types/bun@1.3.13)':
     dependencies:
       '@adobe/css-tools': 4.3.3
       '@babel/runtime': 7.24.5
@@ -10469,7 +10470,7 @@ snapshots:
       lodash: 4.17.21
       redent: 3.0.0
     optionalDependencies:
-      '@types/bun': 1.1.1
+      '@types/bun': 1.3.13
 
   '@testing-library/user-event@14.5.2(@testing-library/dom@9.3.4)':
     dependencies:
@@ -10479,21 +10480,20 @@ snapshots:
 
   '@tootallnate/quickjs-emscripten@0.23.0': {}
 
-  '@trpc/client@11.0.0(@trpc/server@11.0.0(typescript@5.4.5))(typescript@5.4.5)':
+  '@trpc/client@11.13.0(@trpc/server@11.13.0(typescript@5.4.5))(typescript@5.4.5)':
     dependencies:
-      '@trpc/server': 11.0.0(typescript@5.4.5)
+      '@trpc/server': 11.13.0(typescript@5.4.5)
       typescript: 5.4.5
 
-  '@trpc/react-query@11.0.0(@tanstack/react-query@5.35.1(react@18.3.1))(@trpc/client@11.0.0(@trpc/server@11.0.0(typescript@5.4.5))(typescript@5.4.5))(@trpc/server@11.0.0(typescript@5.4.5))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.4.5)':
+  '@trpc/react-query@11.13.0(@tanstack/react-query@5.35.1(react@18.3.1))(@trpc/client@11.13.0(@trpc/server@11.13.0(typescript@5.4.5))(typescript@5.4.5))(@trpc/server@11.13.0(typescript@5.4.5))(react@18.3.1)(typescript@5.4.5)':
     dependencies:
       '@tanstack/react-query': 5.35.1(react@18.3.1)
-      '@trpc/client': 11.0.0(@trpc/server@11.0.0(typescript@5.4.5))(typescript@5.4.5)
-      '@trpc/server': 11.0.0(typescript@5.4.5)
+      '@trpc/client': 11.13.0(@trpc/server@11.13.0(typescript@5.4.5))(typescript@5.4.5)
+      '@trpc/server': 11.13.0(typescript@5.4.5)
       react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
       typescript: 5.4.5
 
-  '@trpc/server@11.0.0(typescript@5.4.5)':
+  '@trpc/server@11.13.0(typescript@5.4.5)':
     dependencies:
       typescript: 5.4.5
 
@@ -10580,9 +10580,9 @@ snapshots:
       '@types/connect': 3.4.38
       '@types/node': 20.12.7
 
-  '@types/bun@1.1.1':
+  '@types/bun@1.3.13':
     dependencies:
-      bun-types: 1.1.6
+      bun-types: 1.3.13
 
   '@types/connect@3.4.38':
     dependencies:
@@ -10664,10 +10664,6 @@ snapshots:
   '@types/node@14.18.33': {}
 
   '@types/node@18.19.31':
-    dependencies:
-      undici-types: 5.26.5
-
-  '@types/node@20.11.24':
     dependencies:
       undici-types: 5.26.5
 
@@ -11476,10 +11472,9 @@ snapshots:
     dependencies:
       semver: 7.6.0
 
-  bun-types@1.1.6:
+  bun-types@1.3.13:
     dependencies:
-      '@types/node': 20.11.24
-      '@types/ws': 8.5.10
+      '@types/node': 20.12.7
 
   bun@1.1.7:
     optionalDependencies:
@@ -12004,12 +11999,12 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  drizzle-orm@0.30.10(@cloudflare/workers-types@4.20260118.0)(@libsql/client@0.6.0)(@types/react@18.3.1)(bun-types@1.1.6)(react@18.3.1):
+  drizzle-orm@0.30.10(@cloudflare/workers-types@4.20260118.0)(@libsql/client@0.6.0)(@types/react@18.3.1)(bun-types@1.3.13)(react@18.3.1):
     optionalDependencies:
       '@cloudflare/workers-types': 4.20260118.0
       '@libsql/client': 0.6.0
       '@types/react': 18.3.1
-      bun-types: 1.1.6
+      bun-types: 1.3.13
       react: 18.3.1
 
   duplexify@3.7.1:
