@@ -34,7 +34,7 @@
 		"zod": "3.23.7"
 	},
 	"devDependencies": {
-		"@cloudflare/next-on-pages": "1.11.2",
+		"@cloudflare/next-on-pages": "1.13.16",
 		"@cloudflare/workers-types": "4.20260118.0",
 		"@repo/eslint-config": "workspace:*",
 		"@repo/typescript-config": "workspace:*",
