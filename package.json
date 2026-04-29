@@ -12,7 +12,7 @@
 		"@repo/eslint-config": "workspace:*",
 		"@repo/typescript-config": "workspace:*",
 		"@types/bun": "1.1.1",
-		"@types/yargs": "17.0.32",
+		"@types/yargs": "17.0.35",
 		"bun": "1.1.7",
 		"prettier": "3.2.5",
 		"prettier-plugin-tailwindcss": "0.5.14",
