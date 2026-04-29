@@ -21,8 +21,8 @@ importers:
         specifier: 17.0.32
         version: 17.0.32
       bun:
-        specifier: 1.1.7
-        version: 1.1.7
+        specifier: 1.1.30
+        version: 1.1.30
       prettier:
         specifier: 3.2.5
         version: 3.2.5
@@ -61,13 +61,13 @@ importers:
         version: 5.35.1(react@18.3.1)
       '@trpc/client':
         specifier: next
-        version: 11.0.0(@trpc/server@11.0.0(typescript@5.4.5))(typescript@5.4.5)
+        version: 11.13.0(@trpc/server@11.13.0(typescript@5.4.5))(typescript@5.4.5)
       '@trpc/react-query':
         specifier: next
-        version: 11.0.0(@tanstack/react-query@5.35.1(react@18.3.1))(@trpc/client@11.0.0(@trpc/server@11.0.0(typescript@5.4.5))(typescript@5.4.5))(@trpc/server@11.0.0(typescript@5.4.5))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.4.5)
+        version: 11.13.0(@tanstack/react-query@5.35.1(react@18.3.1))(@trpc/client@11.13.0(@trpc/server@11.13.0(typescript@5.4.5))(typescript@5.4.5))(@trpc/server@11.13.0(typescript@5.4.5))(react@18.3.1)(typescript@5.4.5)
       '@trpc/server':
         specifier: next
-        version: 11.0.0(typescript@5.4.5)
+        version: 11.13.0(typescript@5.4.5)
       drizzle-orm:
         specifier: 0.30.10
         version: 0.30.10(@cloudflare/workers-types@4.20260118.0)(@libsql/client@0.6.0)(@types/react@18.3.1)(bun-types@1.1.6)(react@18.3.1)
@@ -2063,43 +2063,43 @@ packages:
     resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
     engines: {node: '>= 8'}
 
-  '@oven/bun-darwin-aarch64@1.1.7':
-    resolution: {integrity: sha512-6xH96IjcQlnbsGziUELOhewuobKyzcc+/mV1fSQkY8+c5crgca1nnArS8ja7GaduDWCGuSvMiURFUtf/EAZYtg==}
+  '@oven/bun-darwin-aarch64@1.1.30':
+    resolution: {integrity: sha512-D07QioP+QXlouvIqQIS+7r2zq4lTNd6he79rhKsRQRZGFf9i3NPu87zspUpCaFEu//DZ35DYTt+5anQpAzpoxA==}
     cpu: [arm64]
     os: [darwin]
 
-  '@oven/bun-darwin-x64-baseline@1.1.7':
-    resolution: {integrity: sha512-oMKWmT5lqrnew/cmB+Mmuy/X7X0dBXnyJgsPp1RmV665u7UlNgRGncXhaW/EXlPJk4vaXh6UQQ8bLlg6mnQNgg==}
+  '@oven/bun-darwin-x64-baseline@1.1.30':
+    resolution: {integrity: sha512-1kFUCxHx7WuEbLDmqm0m2UKBd3S4Ln6qKQ4gxU4umMLFkmvDJn6PszDruFInxGKFLoTAmbXNYNVWkkG/ekt/Lg==}
     cpu: [x64]
     os: [darwin]
 
-  '@oven/bun-darwin-x64@1.1.7':
-    resolution: {integrity: sha512-VL0yT0rfdxU3NHts5aGjve1ui977BDJ9xb1Obw0LALWL4EzgQbiF8q8nUE6B25LwrQLzydUNTgMY0YYVLR2UkA==}
+  '@oven/bun-darwin-x64@1.1.30':
+    resolution: {integrity: sha512-xZ4gTehS6QwN6bsJfDycCNneKoUMaFUQhQg24bJzXS4JPDxeKg1W7PS5AE+U9apz5Dx6//+D4RwVpAPG2LXt0w==}
     cpu: [x64]
     os: [darwin]
 
-  '@oven/bun-linux-aarch64@1.1.7':
-    resolution: {integrity: sha512-/oVeD+f4S2tfIoKXVALuQv68k9O/91aMRCJ8+TlnVvZgZEpE6xdtbrSa+iP1wbAvBUy9ags0AgQOJg1QJzK/ow==}
+  '@oven/bun-linux-aarch64@1.1.30':
+    resolution: {integrity: sha512-SfHHLlph6fptDXyyChcUkeDbEZr2ww1p2BucV6OrvzwTOPi8pVmXA4360YT8ggR/3AHPp4GO36VaD+FU2Ocbxw==}
     cpu: [arm64]
     os: [linux]
 
-  '@oven/bun-linux-x64-baseline@1.1.7':
-    resolution: {integrity: sha512-JklT4tgXi83nDyPLcWEfHxLKQnJdtpHG9sSOxpke6TlBwnj84lXbZ+CWhQL/aL9ye1lCTUjEIEbbZph8IhWlWg==}
+  '@oven/bun-linux-x64-baseline@1.1.30':
+    resolution: {integrity: sha512-/b/VuNOaAYmsVk9MvfwKcCYARJPUg78hebxNyD5DSajAf3dqtUSnf7QYcq/3mxWH++N+gM7uRTrGksGS63+ZUw==}
     cpu: [x64]
     os: [linux]
 
-  '@oven/bun-linux-x64@1.1.7':
-    resolution: {integrity: sha512-b+yTqZREacwPXcsg6/ps+qAZ/rlyuRztzptX6oNnc42+xd7BpdvKpdu2p8hbN0IoKBMqlAqFedffxFimIOMWFA==}
+  '@oven/bun-linux-x64@1.1.30':
+    resolution: {integrity: sha512-1mC39jQSaECytEKAZdCZmv3ZreMsp7aoxnBwmJtVd2Z7urnw17PKi4dKkZd/R+AubsNYtXtW4jeM8SEa5sUJRw==}
     cpu: [x64]
     os: [linux]
 
-  '@oven/bun-windows-x64-baseline@1.1.7':
-    resolution: {integrity: sha512-DkclScCfTR8YsNMATn2WVqbIf8cyD/UhIdFa4/R0Qsf+C1BB9jPquXoogSrAUJJyPMSbkBf2KshlROiFjYrjkw==}
+  '@oven/bun-windows-x64-baseline@1.1.30':
+    resolution: {integrity: sha512-ERQ4/ogzbFvHjpyHcnruc8bnryvDvUoiWi6vczfQ4M/idJc+Kg5VSEJiF5k7946rIZGamG6QWgRxtpIglD4/Zw==}
     cpu: [x64]
     os: [win32]
 
-  '@oven/bun-windows-x64@1.1.7':
-    resolution: {integrity: sha512-y8qrlwv09UIYKEm9+X1KzHHtaudWWWn7GGwSqCT6c7XYfR70fbnriyCm2i0qUAUTmgtuhY7dwFtAKf1UkQJ2SQ==}
+  '@oven/bun-windows-x64@1.1.30':
+    resolution: {integrity: sha512-mdRjNtD9NIA8CiH6N1zrIVE6oAtDko/c29H1s00UA+5O/WhXhg95G8IyInD8hN3vAEz8H2lGBgLG2EGfSFxnGg==}
     cpu: [x64]
     os: [win32]
 
@@ -2851,24 +2851,23 @@ packages:
   '@tootallnate/quickjs-emscripten@0.23.0':
     resolution: {integrity: sha512-C5Mc6rdnsaJDjO3UpGW/CQTHtCKaYlScZTly4JIu97Jxo/odCiH0ITnDXSJPTOrEKk/ycSZ0AOgTmkDtkOsvIA==}
 
-  '@trpc/client@11.0.0':
-    resolution: {integrity: sha512-U2THlxsdr4ykAX5lpTU8k5WRADPQ+68Ex2gfUht3MlCxGK7njBmNSSzjpQSWNt7tMI/xsYrddFiRlmEPrh+Cbg==}
+  '@trpc/client@11.13.0':
+    resolution: {integrity: sha512-Tszb0RXGxZQ0OzoH4IGqai/Es1u1RNnvuCr6cbOoJUKyROlF6zeUvQlJvKeldZ+XZ+bGWCnIdfcdA6XDDDNsKQ==}
     peerDependencies:
-      '@trpc/server': 11.0.0
+      '@trpc/server': 11.13.0
       typescript: '>=5.7.2'
 
-  '@trpc/react-query@11.0.0':
-    resolution: {integrity: sha512-HeE9bBLA6nqC2xk5wlNZIPQ5vmyli3tgNNab8fTE489+ksNMKxaIx66pZKsMJIorDcP1wS0rWNV+GroU0iR98g==}
+  '@trpc/react-query@11.13.0':
+    resolution: {integrity: sha512-yF3MAWcfbCgDHXS3FO5tDrvZPK+WbafhPYccty8Bv1kHkjrYzfHAZjIWQATi8egxm6dQnZuyW24mTst5W/9N/A==}
     peerDependencies:
-      '@tanstack/react-query': ^5.67.1
-      '@trpc/client': 11.0.0
-      '@trpc/server': 11.0.0
+      '@tanstack/react-query': ^5.80.3
+      '@trpc/client': 11.13.0
+      '@trpc/server': 11.13.0
       react: '>=18.2.0'
-      react-dom: '>=18.2.0'
       typescript: '>=5.7.2'
 
-  '@trpc/server@11.0.0':
-    resolution: {integrity: sha512-xY9q/b/wR/tWGYTm5xmRjivkYD2EZZXmOKmHuNJRYZuLbieeNUsdfQRjJC409WB1pjKWInomhHwuA8bahZJ4lQ==}
+  '@trpc/server@11.13.0':
+    resolution: {integrity: sha512-Iv3tWeFdb9d1UQwCPFtOcf63mF/6HD0FRDnzLmFIKWDBfKUvHUfU3yNr2pYiGs0Ctljc991Wh8xbuyAPRkdqyA==}
     peerDependencies:
       typescript: '>=5.7.2'
 
@@ -3527,6 +3526,7 @@ packages:
   basic-ftp@5.0.5:
     resolution: {integrity: sha512-4Bcg1P8xhUuqcii/S0Z9wiHIrQVPMermM1any+MX5GeGD7faD3/msQUDGLol9wOcz4/jbg/WJnGqoJF6LiBdtg==}
     engines: {node: '>=10.0.0'}
+    deprecated: Security vulnerability fixed in 5.2.1, please upgrade
 
   better-opn@3.0.2:
     resolution: {integrity: sha512-aVNobHnJqLiUelTaHat9DZ1qM2w0C0Eym4LPI/3JxOnSokGVdsl1T1kN7TFvsEAD8G47A6VKQ0TVHqbBnYMJlQ==}
@@ -3597,8 +3597,8 @@ packages:
   bun-types@1.1.6:
     resolution: {integrity: sha512-LK2aaJdBBTUkDyN+kRiJHLF3VGrAcdkEHrbBvbmTkccShPw6ZalxxKjWSBJwn4UkikhZdrdA87bZWmfUgkRUYg==}
 
-  bun@1.1.7:
-    resolution: {integrity: sha512-4Q/ySjXfSTOsehxektQuo376FfI/QMPSjnsBAwQAZsRFW37Hb8IdctOABDEBQcrYmiwgDGKlgdWTQ8/5H0N2ww==}
+  bun@1.1.30:
+    resolution: {integrity: sha512-ysRL1pq10Xba0jqVLPrKU3YIv0ohfp3cTajCPtpjCyppbn3lfiAVNpGoHfyaxS17OlPmWmR67UZRPw/EueQuug==}
     cpu: [arm64, x64]
     os: [darwin, linux, win32]
     hasBin: true
@@ -5113,16 +5113,17 @@ packages:
   glob@10.3.10:
     resolution: {integrity: sha512-fa46+tv1Ak0UPK1TOy/pZrIybNNt4HCv7SDzwyfiOZkvZLEbjsZkJBPtDHVshZjbecAoAGSC20MjLDG/qr679g==}
     engines: {node: '>=16 || 14 >=14.17'}
+    deprecated: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
     hasBin: true
 
   glob@7.2.3:
     resolution: {integrity: sha512-nFR0zLpU2YCaRxwoCJvL6UvCH2JFyFVIvwTLsIf21AuHlMskA1hhTdk+LlYJtOlYt9v6dvszD2BGRqBL+iQK9Q==}
-    deprecated: Glob versions prior to v9 are no longer supported
+    deprecated: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
 
   glob@8.1.0:
     resolution: {integrity: sha512-r8hpEjiQEYlF2QU0df3dS+nxxSIreXQS1qRhMJM0Q5NDdR386C7jb7Hwwod8Fgiuex+k0GFjgft18yvxm5XoCQ==}
     engines: {node: '>=12'}
-    deprecated: Glob versions prior to v9 are no longer supported
+    deprecated: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
 
   globals@11.12.0:
     resolution: {integrity: sha512-WOBp/EEGUiIsJSp7wcv/y6MO+lV9UoncWqxuFfm8eBwzWNgyfBd6Gz+IeKQ9jCmyhoH99g15M3T+QaVHFjizVA==}
@@ -7183,10 +7184,12 @@ packages:
   tar@4.4.18:
     resolution: {integrity: sha512-ZuOtqqmkV9RE1+4odd+MhBpibmCxNP6PJhH/h2OqNuotTX7/XHPZQJv2pKvWMplFH9SIZZhitehh6vBH6LO8Pg==}
     engines: {node: '>=4.5'}
+    deprecated: Old versions of tar are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
 
   tar@6.2.1:
     resolution: {integrity: sha512-DZ4yORTwrbTj/7MZYq2w+/ZFdI6OZ/f9SFHR+71gIVUZhOQPHzVCLpvRnPgyaMpfWxxk/4ONva3GQSyNIKRv6A==}
     engines: {node: '>=10'}
+    deprecated: Old versions of tar are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
 
   telejson@7.2.0:
     resolution: {integrity: sha512-1QTEcJkJEhc8OnStBx/ILRu5J2p0GjvWsBx56bmZRqnrkdBMUe+nX92jxV+p3dB4CP6PZCdJMQJwCggkNBMzkQ==}
@@ -7564,11 +7567,12 @@ packages:
 
   uuid@3.3.2:
     resolution: {integrity: sha512-yXJmeNaw3DnnKAOKJE51sL/ZaYfWJRl1pK9dr19YFCu0ObS231AB1/LbqTKRAQ5kw8A90rA6fr4riOUpTZvQZA==}
-    deprecated: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+    deprecated: uuid@10 and below is no longer supported.  For ESM codebases, update to uuid@latest.  For CommonJS codebases, use uuid@11 (but be aware this version will likely be deprecated in 2028).
     hasBin: true
 
   uuid@9.0.1:
     resolution: {integrity: sha512-b+1eJOlsR9K8HJpow9Ok3fiWOWSIcIzXodvv0rQjVoOVNpWMpxf1wZNpt4y9h10odCNrqnYp1OBzRktckBe3sA==}
+    deprecated: uuid@10 and below is no longer supported.  For ESM codebases, update to uuid@latest.  For CommonJS codebases, use uuid@11 (but be aware this version will likely be deprecated in 2028).
     hasBin: true
 
   v8-compile-cache-lib@3.0.1:
@@ -9342,28 +9346,28 @@ snapshots:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.17.1
 
-  '@oven/bun-darwin-aarch64@1.1.7':
+  '@oven/bun-darwin-aarch64@1.1.30':
     optional: true
 
-  '@oven/bun-darwin-x64-baseline@1.1.7':
+  '@oven/bun-darwin-x64-baseline@1.1.30':
     optional: true
 
-  '@oven/bun-darwin-x64@1.1.7':
+  '@oven/bun-darwin-x64@1.1.30':
     optional: true
 
-  '@oven/bun-linux-aarch64@1.1.7':
+  '@oven/bun-linux-aarch64@1.1.30':
     optional: true
 
-  '@oven/bun-linux-x64-baseline@1.1.7':
+  '@oven/bun-linux-x64-baseline@1.1.30':
     optional: true
 
-  '@oven/bun-linux-x64@1.1.7':
+  '@oven/bun-linux-x64@1.1.30':
     optional: true
 
-  '@oven/bun-windows-x64-baseline@1.1.7':
+  '@oven/bun-windows-x64-baseline@1.1.30':
     optional: true
 
-  '@oven/bun-windows-x64@1.1.7':
+  '@oven/bun-windows-x64@1.1.30':
     optional: true
 
   '@pkgjs/parseargs@0.11.0':
@@ -10479,21 +10483,20 @@ snapshots:
 
   '@tootallnate/quickjs-emscripten@0.23.0': {}
 
-  '@trpc/client@11.0.0(@trpc/server@11.0.0(typescript@5.4.5))(typescript@5.4.5)':
+  '@trpc/client@11.13.0(@trpc/server@11.13.0(typescript@5.4.5))(typescript@5.4.5)':
     dependencies:
-      '@trpc/server': 11.0.0(typescript@5.4.5)
+      '@trpc/server': 11.13.0(typescript@5.4.5)
       typescript: 5.4.5
 
-  '@trpc/react-query@11.0.0(@tanstack/react-query@5.35.1(react@18.3.1))(@trpc/client@11.0.0(@trpc/server@11.0.0(typescript@5.4.5))(typescript@5.4.5))(@trpc/server@11.0.0(typescript@5.4.5))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.4.5)':
+  '@trpc/react-query@11.13.0(@tanstack/react-query@5.35.1(react@18.3.1))(@trpc/client@11.13.0(@trpc/server@11.13.0(typescript@5.4.5))(typescript@5.4.5))(@trpc/server@11.13.0(typescript@5.4.5))(react@18.3.1)(typescript@5.4.5)':
     dependencies:
       '@tanstack/react-query': 5.35.1(react@18.3.1)
-      '@trpc/client': 11.0.0(@trpc/server@11.0.0(typescript@5.4.5))(typescript@5.4.5)
-      '@trpc/server': 11.0.0(typescript@5.4.5)
+      '@trpc/client': 11.13.0(@trpc/server@11.13.0(typescript@5.4.5))(typescript@5.4.5)
+      '@trpc/server': 11.13.0(typescript@5.4.5)
       react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
       typescript: 5.4.5
 
-  '@trpc/server@11.0.0(typescript@5.4.5)':
+  '@trpc/server@11.13.0(typescript@5.4.5)':
     dependencies:
       typescript: 5.4.5
 
@@ -11481,16 +11484,16 @@ snapshots:
       '@types/node': 20.11.24
       '@types/ws': 8.5.10
 
-  bun@1.1.7:
+  bun@1.1.30:
     optionalDependencies:
-      '@oven/bun-darwin-aarch64': 1.1.7
-      '@oven/bun-darwin-x64': 1.1.7
-      '@oven/bun-darwin-x64-baseline': 1.1.7
-      '@oven/bun-linux-aarch64': 1.1.7
-      '@oven/bun-linux-x64': 1.1.7
-      '@oven/bun-linux-x64-baseline': 1.1.7
-      '@oven/bun-windows-x64': 1.1.7
-      '@oven/bun-windows-x64-baseline': 1.1.7
+      '@oven/bun-darwin-aarch64': 1.1.30
+      '@oven/bun-darwin-x64': 1.1.30
+      '@oven/bun-darwin-x64-baseline': 1.1.30
+      '@oven/bun-linux-aarch64': 1.1.30
+      '@oven/bun-linux-x64': 1.1.30
+      '@oven/bun-linux-x64-baseline': 1.1.30
+      '@oven/bun-windows-x64': 1.1.30
+      '@oven/bun-windows-x64-baseline': 1.1.30
 
   busboy@1.6.0:
     dependencies:
